@@ -109,6 +109,6 @@ h1 {
     margin-bottom: 10px;
 }
 
-.Vanguardia { background-color: #267ede; color: white; }
-.Duelista { background-color: #de2626; color: white; }
-.Estratega { background-color: #26de81; color: #121214; }
+.Vanguardia { background-color: #267ede; color: black; }
+.Duelista { background-color: #fff200; color: black; }
+.Estratega { background-color: #26de81; color: black; }
