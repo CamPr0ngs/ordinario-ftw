@@ -11,7 +11,7 @@ function cargarHeroesPorRol(rolFiltrado, idContenedor) {
         // Validamos que el estado sea 4 (completado) y 200 (OK)
         if (xhr.readyState === 4 && xhr.status === 200) {
             var xmlDoc = xhr.responseXML;
-            // obtener todos los bloques <heroe> del XML
+            // obtiene todos los bloques <heroe> del XML
             var heroes = xmlDoc.getElementsByTagName("heroe");
             var contenedor = document.getElementById(idContenedor);
             
