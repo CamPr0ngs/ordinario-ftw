@@ -4,33 +4,37 @@
     <heroe id="H001">
         <nombre>Doctor Strange</nombre>
         <rol>Vanguardia</rol>
-        <habilidad>Escudo</habilidad>
+        <habilidad>Escudo de los Serafíns</habilidad>
+        <ultimate>Ojo de Agamotto</ultimate>
         <afiliacion>Avengers</afiliacion>
         <descripcion>El Hechicero Supremo que abre portales, manipula el tiempo y protege a su equipo para asegurar la victoria.</descripcion>
-        <imagen>img/strange.png</imagen>
+        <imagen>img/Strange.png</imagen>
     </heroe>
     <heroe id="H002">
         <nombre>Hela</nombre>
         <rol>Duelista</rol>
         <habilidad>Espadas Nocturnas</habilidad>
+        <ultimate>Diosa de la Muerte</ultimate>        
         <afiliacion>Asgard</afiliacion>
         <descripcion>La Diosa de la Muerte, lanza ráfagas de espadas nocturnas para acabar con sus rivales.</descripcion>
-        <imagen>img/hela.png</imagen>
+        <imagen>img/Hela.png</imagen>
     </heroe>
     <heroe id="H003">
         <nombre>Peni Parker</nombre>
         <rol>Vanguardia</rol>
         <habilidad>Trampas Arácnidas</habilidad>
+        <ultimate>Barrido de Arañas</ultimate>
         <afiliacion>Spider-Verse</afiliacion>
         <descripcion>Pilota su poderoso traje SP//dr para colocar trampas de nido aránido y realentizar el avance enemigo, a la vez que les hace daño.</descripcion>
-        <imagen>img/peni.png</imagen>
+        <imagen>img/Peni.png</imagen>
     </heroe>
     <heroe id="H004">
         <nombre>Gambito</nombre>
         <rol>Estratega</rol>
         <habilidad>Cartas cinéticas</habilidad>
+        <ultimate>Escalera Real Furiosa</ultimate>
         <afiliacion>X-Men</afiliacion>
         <descripcion>El carismático mutante que carga objetos con energía cinética, lanzando ráfagas de cartas explosivas para infligir gran daño a distancia y curar a sus aliados.</descripcion>
-        <imagen>img/gambito.png</imagen>
+        <imagen>img/Gambito.png</imagen>
     </heroe>
 </lista_heroes>
