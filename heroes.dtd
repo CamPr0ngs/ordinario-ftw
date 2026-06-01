@@ -1,0 +1,9 @@
+<!ELEMENT lista_heroes (heroe+)>
+<!ELEMENT heroe (nombre, rol, habilidad, afiliacion, descripcion, imagen)>
+<!ATTLIST heroe id ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT rol (#PCDATA)>
+<!ELEMENT habilidad (#PCDATA)>
+<!ELEMENT afiliacion (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
