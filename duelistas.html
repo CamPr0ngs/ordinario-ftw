@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marvel Rivals - Duelistas</title>    
+    <title>Marvel Rivals - Duelistas</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
 
     <header>
@@ -13,7 +16,8 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="personajes.html">Todos los Héroes</a></li>
                 <li><a href="vanguardias.html">Vanguardias</a></li>
-                <li><a href="duelistas.html" class="active">Duelistas</a></li> <!-- Aqui se marca que esta es la pagina actual -->
+                <li><a href="duelistas.html" class="active">Duelistas</a></li>
+                <!-- Aqui se marca que esta es la pagina actual -->
                 <li><a href="estrategas.html">Estrategas</a></li>
                 <li><a href="acerca-de.html">Acerca de</a></li>
                 <li><a href="sintesis.html">Autor</a></li>
@@ -24,19 +28,38 @@
     <main>
         <h1>Clase: Duelista</h1>
         <p style="text-align: center; color: #a0a0a5; max-width: 600px; margin: 0 auto 30px auto;">
-            Los Duelistas son las máquinas de matar del equipo. Tienen una movilidad asombrosa y un daño por ráfagas brutal, 
-            ideal para romper la formación enemiga,  eliminar sus líneas traseras o flanquear objetivos clave.
+            Los Duelistas son las máquinas de matar del equipo. Tienen una movilidad asombrosa y un daño por ráfagas muy
+            grande,
+            ideales para romper la formación enemiga, eliminar sus líneas traseras o flanquear objetivos clave.
         </p>
-        
-        <section id="galeria-duelistas" class="galeria-grid"></section>
+
+        <section style="text-align: center; margin-bottom: 25px;">
+            <label for="filtro-estilo" style="color: #a0a0a5; margin-right: 10px; font-weight: bold;">Estilo de
+                Juego:</label>
+            <select id="filtro-estilo" onchange="filtrarDuelistas()"
+                style="padding: 6px 12px; background: #1a1a1e; color: white; border: 1px solid #fff200; border-radius: 4px;">
+                <option value="Todos">-- Todos los Estilos --</option>
+                <option value="Dive">Dive</option>
+                <option value="Brawl">Brawl</option>
+                <option value="Poke">Poke</option>
+            </select>
+        </section>
+
+        <section id="galeria-duelistas" style="overflow-x: auto;"></section>
     </main>
 
     <script src="js/motor.js"></script>
     <script>
-        window.onload = function() {
-            // filtrado por "Duelista"
-            cargarHeroesPorRol("Duelista", "galeria-duelistas");
+        function filtrarDuelistas() {
+            var estilo = document.getElementById("filtro-estilo").value;
+            // envía el rol Duelista, el contenedor y el estilo seleccionado
+            cargarHeroesPorRol("Duelista", "galeria-duelistas", "Todos", estilo);
+        }
+
+        window.onload = function () {
+            filtrarDuelistas();
         };
     </script>
 </body>
-</html>
+
+</html>>

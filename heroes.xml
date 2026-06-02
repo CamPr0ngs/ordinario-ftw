@@ -8,6 +8,9 @@
         <ultimate>Ojo de Agamotto</ultimate>
         <afiliacion>Avengers</afiliacion>
         <descripcion>El Hechicero Supremo que abre portales, manipula el tiempo y protege a su equipo para asegurar la victoria.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>Main Tank</tipoVanguardia>
+        <tipoEstratega>Off Healer</tipoEstratega>
         <imagen>img/Strange.png</imagen>
     </heroe>
     <heroe id="H002">
@@ -17,6 +20,9 @@
         <ultimate>Diosa de la Muerte</ultimate>        
         <afiliacion>Asgard</afiliacion>
         <descripcion>La Diosa de la Muerte, lanza ráfagas de espadas nocturnas altamente precisas para acabar con sus rivales.</descripcion>
+        <tipoDuelista>Poke</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
         <imagen>img/Hela.png</imagen>
     </heroe>
     <heroe id="H003">
@@ -26,6 +32,9 @@
         <ultimate>Barrido de Arañas</ultimate>
         <afiliacion>Spider-Verse</afiliacion>
         <descripcion>Pilota su poderoso traje SP//dr para colocar trampas de nido aránido y realentizar el avance enemigo, a la vez que les hace daño.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>Off Tank</tipoVanguardia>
+        <tipoEstratega>Off Healer</tipoEstratega>
         <imagen>img/Peni.png</imagen>
     </heroe>
     <heroe id="H004">
@@ -35,6 +44,9 @@
         <ultimate>Escalera Real Furiosa</ultimate>
         <afiliacion>X-Men</afiliacion>
         <descripcion>El carismático mutante que carga objetos con energía cinética, lanzando ráfagas de cartas explosivas para infligir gran daño a distancia y curar a sus aliados.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>Main Healer</tipoEstratega>
         <imagen>img/Gambito.png</imagen>
     </heroe>
 </lista_heroes>

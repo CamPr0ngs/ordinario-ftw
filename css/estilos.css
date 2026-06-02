@@ -1,3 +1,6 @@
+/* ==========================================
+   ESTILOS GENERALES Y PALETA OSCURA
+   ========================================== */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #121214;
@@ -31,7 +34,8 @@ nav ul li a {
     transition: color 0.3s;
 }
 
-nav ul li a:hover, nav ul li a.active {
+nav ul li a:hover,
+nav ul li a.active {
     color: #ffffff;
     border-bottom: 2px solid #de2626;
 }
@@ -50,55 +54,82 @@ h1 {
     letter-spacing: 2px;
 }
 
-/* Rejilla para las Tarjetas de los Héroes*/
-.galeria-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 25px;
+/* ==========================================
+   DISEÑO DE TABLAS INTEGRADO COMO TARJETAS HORIZONTALES
+   ========================================== */
+.tabla-heroes {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    /* Espacio entre cada fila-tarjeta */
     margin-top: 30px;
+    background-color: transparent;
 }
 
-/* Estilo de cada Tarjeta de Héroe */
-.tarjeta-heroe {
+.tabla-heroes th {
+    background-color: #0e0e10;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 3px solid #de2626;
+}
+
+/* Cada fila actúa como una tarjeta oscura individual */
+.fila-heroe {
     background-color: #1a1a1e;
-    border: 1px solid #2a2a30;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Efecto visual al pasar el mouse por encima */
-.tarjeta-heroe:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(222, 38, 38, 0.4);
-}
-
-.tarjeta-heroe img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover; /* Ajusta la imagen sin deformarla */
-    background-color: #2a2a30;
-}
-
-.info-tarjeta {
+.tabla-heroes td {
     padding: 15px;
-}
-
-.info-tarjeta h2 {
-    margin: 0 0 10px 0;
-    font-size: 22px;
-    color: #ffffff;
-}
-
-.info-tarjeta p {
+    color: #d1d1d6;
     font-size: 14px;
+    vertical-align: middle;
+    border-top: 1px solid #2a2a30;
+    border-bottom: 1px solid #2a2a30;
+}
+
+/* Redondear extremos de la fila */
+.tabla-heroes tr td:first-child {
+    border-left: 4px solid #2a2a30;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.tabla-heroes tr td:last-child {
+    border-right: 1px solid #2a2a30;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* Miniaturas de héroes más grandes */
+.img-tabla {
+    width: 120px;
+    height: 140px;
+    object-fit: contain;
+    border-radius: 0;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+    transition: filter 0.3s, transform 0.3s;
+}
+
+.fila-heroe.Duelista:hover .img-tabla {
+    filter: drop-shadow(0 0 8px rgba(255, 242, 0, 0.7));    
+}
+
+article {
     line-height: 1.5;
     color: #d1d1d6;
-    margin: 8px 0;
 }
 
-/* Etiquetas de color según el Rol */
+/* ==========================================
+   BADGES Y TONOS DE ROLES Y SUB-ROLES
+   ========================================== */
 .badge {
     display: inline-block;
     padding: 5px 10px;
@@ -106,9 +137,195 @@ h1 {
     font-size: 11px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 10px;
 }
 
-.Vanguardia { background-color: #267ede; color: black; }
-.Duelista { background-color: #fff200; color: black; }
-.Estratega { background-color: #26de81; color: black; }
+.badge.Vanguardia {
+    background-color: #267ede;
+    color: black;
+}
+
+.badge.Duelista {
+    background-color: #fff200;
+    color: black;
+}
+
+.badge.Estratega {
+    background-color: #26de81;
+    color: black;
+}
+
+.badge-estilo,
+.badge-vanguardia,
+.badge-estratega {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+}
+
+.badge-estilo.Poke {
+    background-color: #fff200;
+}
+
+.badge-estilo.Dive {
+    background-color: #ff9f43;
+}
+
+.badge-estilo.Brawl {
+    background-color: #ff4d4d;
+}
+
+.badge-vanguardia.MainTank {
+    background-color: #2980b9;
+    color: white;
+}
+
+.badge-vanguardia.OffTank {
+    background-color: #3498db;
+    color: white;
+}
+
+.badge-estratega.MainHealer {
+    background-color: #26de81;
+}
+
+.badge-estratega.OffHealer {
+    background-color: #a8e6cf;
+}
+
+/* ==========================================
+   EFECTOS HOVER CON BRILLOS DE NEÓN
+   ========================================== */
+.fila-heroe:hover {
+    transform: translateY(-3px);
+}
+
+/* Iluminación Azul - Vanguardias */
+.fila-heroe.Vanguardia:hover td {
+    border-top-color: #267ede;
+    border-bottom-color: #267ede;
+}
+
+.fila-heroe.Vanguardia:hover td:first-child {
+    border-left-color: #267ede;
+}
+
+.fila-heroe.Vanguardia:hover td:last-child {
+    border-right-color: #267ede;
+}
+
+.fila-heroe.Vanguardia:hover img {
+    border-color: #267ede;
+    box-shadow: 0 0 12px rgba(38, 126, 222, 0.6);
+}
+
+/* Iluminación Amarilla - Duelistas */
+.fila-heroe.Duelista:hover td {
+    border-top-color: #fff200;
+    border-bottom-color: #fff200;
+}
+
+.fila-heroe.Duelista:hover td:first-child {
+    border-left-color: #fff200;
+}
+
+.fila-heroe.Duelista:hover td:last-child {
+    border-right-color: #fff200;
+}
+
+.fila-heroe.Duelista:hover img {
+    border-color: #fff200;
+    box-shadow: 0 0 12px rgba(255, 242, 0, 0.6);
+}
+
+/* Iluminación Verde - Estrategas */
+.fila-heroe.Estratega:hover td {
+    border-top-color: #26de81;
+    border-bottom-color: #26de81;
+}
+
+.fila-heroe.Estratega:hover td:first-child {
+    border-left-color: #26de81;
+}
+
+.fila-heroe.Estratega:hover td:last-child {
+    border-right-color: #26de81;
+}
+
+.fila-heroe.Estratega:hover img {
+    border-color: #26de81;
+    box-shadow: 0 0 12px rgba(38, 222, 129, 0.6);
+}
+
+.no-datos {
+    text-align: center;
+    color: #a0a0a5;
+    font-weight: bold;
+    padding: 30px;
+    background: #1a1a1e;
+    border-radius: 8px;
+    border: 1px dashed #2a2a30;
+}
+
+/* ==========================================
+   MEDIA QUERIES - RESPONSIVIDAD PARA CELULAR
+   ========================================== */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .tabla-heroes,
+    .tabla-heroes thead,
+    .tabla-heroes tbody,
+    .tabla-heroes th,
+    .tabla-heroes td,
+    .tabla-heroes tr {
+        display: block;
+    }
+
+    .tabla-heroes thead {
+        display: none;
+    }
+
+    .tabla-heroes tr {
+        margin-bottom: 20px;
+        border: 1px solid #2a2a30;
+        border-radius: 8px;
+        background-color: #1a1a1e;
+        padding: 10px;
+    }
+
+    .tabla-heroes td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border: none !important;
+        border-bottom: 1px solid #2a2a30 !important;
+    }
+
+    .tabla-heroes tr td:last-child {
+        border-bottom: none !important;
+    }
+
+    .tabla-heroes td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        text-align: left;
+        font-weight: bold;
+        color: #a0a0a5;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+    .img-tabla {
+        margin: 0 0 0 auto;
+    }
+}
