@@ -105,7 +105,7 @@ h1 {
     border-bottom-right-radius: 8px;
 }
 
-/* Miniaturas de héroes más grandes */
+/* Miniaturas de héroes de cuerpo completo */
 .img-tabla {
     width: 120px;
     height: 140px;
@@ -116,10 +116,6 @@ h1 {
     margin: 0 auto;
     background-color: transparent;
     transition: filter 0.3s, transform 0.3s;
-}
-
-.fila-heroe.Duelista:hover .img-tabla {
-    filter: drop-shadow(0 0 8px rgba(255, 242, 0, 0.7));    
 }
 
 article {
@@ -217,9 +213,8 @@ article {
     border-right-color: #267ede;
 }
 
-.fila-heroe.Vanguardia:hover img {
-    border-color: #267ede;
-    box-shadow: 0 0 12px rgba(38, 126, 222, 0.6);
+.fila-heroe.Vanguardia:hover .img-tabla {
+    filter: drop-shadow(0 0 8px rgba(38, 126, 222, 0.7));
 }
 
 /* Iluminación Amarilla - Duelistas */
@@ -236,9 +231,8 @@ article {
     border-right-color: #fff200;
 }
 
-.fila-heroe.Duelista:hover img {
-    border-color: #fff200;
-    box-shadow: 0 0 12px rgba(255, 242, 0, 0.6);
+.fila-heroe.Duelista:hover .img-tabla {
+    filter: drop-shadow(0 0 8px rgba(255, 242, 0, 0.7));
 }
 
 /* Iluminación Verde - Estrategas */
@@ -255,9 +249,8 @@ article {
     border-right-color: #26de81;
 }
 
-.fila-heroe.Estratega:hover img {
-    border-color: #26de81;
-    box-shadow: 0 0 12px rgba(38, 222, 129, 0.6);
+.fila-heroe.Estratega:hover .img-tabla {
+    filter: drop-shadow(0 0 8px rgba(38, 222, 129, 0.7));
 }
 
 .no-datos {
@@ -268,6 +261,149 @@ article {
     background: #1a1a1e;
     border-radius: 8px;
     border: 1px dashed #2a2a30;
+}
+
+/* ==========================================
+   VENTANITA DE INFORMACIÓN OPERATIVA (MODAL FUERA DE MEDIA QUERIES)
+   ========================================== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(5, 5, 7, 0.9);
+    /* Fondo exterior oscuro plano */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.tarjeta-grande-content {
+    background-color: #0b0b0d;
+    border: 1px solid #232329;
+    border-radius: 12px;
+    width: 95%;
+    max-width: 900px;
+    height: 520px;
+    /* Altura controlada para el render */
+    padding: 0;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+
+/* Resplandores en la tarjeta flotante */
+.tarjeta-grande-content.Vanguardia {
+    border-color: rgba(38, 126, 222, 0.4);
+}
+
+.tarjeta-grande-content.Duelista {
+    border-color: rgba(255, 242, 0, 0.4);
+}
+
+.tarjeta-grande-content.Estratega {
+    border-color: rgba(38, 222, 129, 0.4);
+}
+
+.tarjeta-grande-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    height: 100%;
+    width: 100%;
+}
+
+.col-render {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    /* Sienta al personaje en el suelo de la ventana */
+    justify-content: center;
+    background: radial-gradient(circle at center, #18181c 0%, #0b0b0d 100%);
+    overflow: hidden;
+}
+
+.render-grande {
+    height: 105%;
+    width: auto;
+    object-fit: contain;
+    z-index: 1;
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+.col-info {
+    background-color: #111115;
+    border-left: 1px solid #232329;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    text-align: left;
+}
+
+.col-info h2 {
+    font-size: 38px;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.separador {
+    border: none;
+    border-top: 1px solid #232329;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.desc-grande {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #a0a0a5;
+    margin: 0 0 20px 0;
+}
+
+.datos-tacticos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.datos-tacticos li {
+    padding: 8px 0;
+    border-bottom: 1px solid #1c1c22;
+    font-size: 13px;
+    color: #8e8e93;
+}
+
+.datos-tacticos li strong {
+    color: #ffffff;
+    margin-right: 5px;
+}
+
+.btn-cerrar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #1c1c22;
+    border: 1px solid #232329;
+    color: #ffffff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 33px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.btn-cerrar:hover {
+    background: #de2626;
+    border-color: #de2626;
 }
 
 /* ==========================================
@@ -325,7 +461,23 @@ article {
         font-size: 12px;
     }
 
-    .img-tabla {
-        margin: 0 0 0 auto;
+    /* Ajustes del modal en pantallas móviles */
+    .tarjeta-grande-grid {
+        grid-template-columns: 1fr;
+        overflow-y: auto;
+    }
+
+    .tarjeta-grande-content {
+        height: 85vh;
+    }
+
+    .col-info {
+        border-left: none;
+        border-top: 1px solid #232329;
+        padding: 20px;
+    }
+
+    .render-grande {
+        height: 220px;
     }
 }

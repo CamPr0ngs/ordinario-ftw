@@ -60,7 +60,7 @@ function cargarHeroesPorRol(rolFiltrado, idContenedor, ataqueFiltrado = "Todos",
                     var imagen = heroes[i].getElementsByTagName("imagen")[0].textContent;
 
                     tablaHtml += `
-                        <tr class="fila-heroe ${rol}">
+                        <tr class="fila-heroe ${rol}" onclick="mostrarTarjetaGrande('${nombre}', '${imagen}', '${rol}', '${tipoDuelista}', '${habilidad}', '${ultimate}', '${afiliacion}', \`${descripcion.replace(/'/g, "\\'")}\`)" style="cursor: pointer;">
                             <td data-label="Miniatura">
                                 <img src="${imagen}" alt="Retrato de ${nombre}" class="img-tabla">
                             </td>
@@ -82,7 +82,56 @@ function cargarHeroesPorRol(rolFiltrado, idContenedor, ataqueFiltrado = "Todos",
             contenedor.innerHTML = hayDatos ? tablaHtml : "<p class='no-datos'>No se encontraron héroes con estos filtros.</p>";
         }
     };
-
     // Envia la petición AJAX
     xhr.send();
+}
+
+// FUNCIÓN PARA MOSTRAR TARJETA GIGANTE
+function mostrarTarjetaGrande(nombre, imagen, rol, subrol, habilidad, ultimate, afiliacion, descripcion) {
+    // Si ya existe un modal abierto, lo quita para no duplicar
+    var modalViejo = document.getElementById("modal-heroe");
+    if (modalViejo) modalViejo.remove();
+
+    // crea la estructura del contenedor flotante
+    var modal = document.createElement("div");
+    modal.id = "modal-heroe";
+    modal.className = "modal-overlay";
+    modal.onclick = cerrarTarjetaGrande; // Si dan clic afuera, se cierra
+
+    // Aquí pone la tarjeta en grande
+    modal.innerHTML = `
+        <div class="tarjeta-grande-content ${rol}" onclick="event.stopPropagation()">
+            <button class="btn-cerrar" onclick="cerrarTarjetaGrande()">×</button>
+            
+            <div class="tarjeta-grande-grid">
+                <div class="col-render">
+                    <img src="${imagen}" alt="${nombre}" class="render-grande">
+                </div>
+                <div class="col-info">
+                    <h2>${nombre}</h2>
+                    <div class="badges-container">
+                        <span class="badge ${rol}">${rol}</span>
+                        ${subrol !== 'N/A' ? `<span class="badge-subrol">${subrol}</span>` : ''}
+                    </div>
+                    <hr class="separador">
+                    <p class="desc-grande">${descripcion}</p>
+                    <ul class="datos-tacticos">
+                        <li><strong>Habilidad Principal:</strong> ${habilidad}</li>
+                        <li><strong>Ultimate:</strong> ${ultimate}</li>
+                        <li><strong>Afiliación:</strong> ${afiliacion}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(modal);
+}
+
+// cerrar tarjeta grande
+function cerrarTarjetaGrande() {
+    var modal = document.getElementById("modal-heroe");
+    if (modal) {
+        modal.remove();
+    }
 }
