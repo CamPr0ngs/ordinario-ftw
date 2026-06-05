@@ -13,6 +13,7 @@ function cargarHeroesPorRol(rolFiltrado, idContenedor, ataqueFiltrado = "Todos",
             var contenedor = document.getElementById(idContenedor);
 
             var esPaginaDuelistas = (rolFiltrado === "Duelista");
+            var esPaginaEstrategas = (rolFiltrado === "Estratega");
 
             // empieza a armar la estructura de la tabla
             var tablaHtml = `
@@ -22,7 +23,8 @@ function cargarHeroesPorRol(rolFiltrado, idContenedor, ataqueFiltrado = "Todos",
                             <th scope="col">Miniatura</th>
                             <th scope="col">Héroe</th>
                             <th scope="col">Rol</th>
-                            ${esPaginaDuelistas ? '<th scope="col">Estilo Duelista</th>' : ''}                                
+                            ${esPaginaDuelistas ? '<th scope="col">Estilo Duelista</th>' : ''} 
+                            ${esPaginaEstrategas ? '<th scope="col">Estilo Estratega</th>' : ''}                               
                             <th scope="col">Habilidad Principal</th>
                             <th scope="col">Ultimate</th>
                             <th scope="col">Afiliación</th>
@@ -34,12 +36,13 @@ function cargarHeroesPorRol(rolFiltrado, idContenedor, ataqueFiltrado = "Todos",
 
             var hayDatos = false;
 
-            // reocrre los héroes uno por uno
+            // recorre los héroes uno por uno
             for (var i = 0; i < heroes.length; i++) {
                 var rol = heroes[i].getElementsByTagName("rol")[0].textContent;
 
                 // Saca el tipo de personajes para filtrar
                 var tipoDuelista = heroes[i].getElementsByTagName("tipoDuelista")[0].textContent;
+                var tipoEstratega = heroes[i].getElementsByTagName("tipoEstratega")[0].textContent;
 
                 // LÓGICA DE FILTRADO
                 var cumpleRol = (rolFiltrado === "Todos" || rol === rolFiltrado);
@@ -47,6 +50,8 @@ function cargarHeroesPorRol(rolFiltrado, idContenedor, ataqueFiltrado = "Todos",
                 var cumpleSubRol = true;
                 if (esPaginaDuelistas) {
                     cumpleSubRol = (tipoSubRolFiltrado === "Todos" || tipoDuelista === tipoSubRolFiltrado);
+                } else if (esPaginaEstrategas) {
+                    cumpleSubRol = (tipoSubRolFiltrado === "Todos" || tipoEstratega === tipoSubRolFiltrado);
                 }
 
                 // Si el personaje pasa los filtros, lo pone en la tabla
@@ -59,14 +64,18 @@ function cargarHeroesPorRol(rolFiltrado, idContenedor, ataqueFiltrado = "Todos",
                     var descripcion = heroes[i].getElementsByTagName("descripcion")[0].textContent;
                     var imagen = heroes[i].getElementsByTagName("imagen")[0].textContent;
 
+                    // Detecta cuál subrol está activo dinámicamente para mandarlo a la tarjeta grande
+                    var subrolActivo = esPaginaDuelistas ? tipoDuelista : (esPaginaEstrategas ? tipoEstratega : 'N/A');
+
                     tablaHtml += `
-                        <tr class="fila-heroe ${rol}" onclick="mostrarTarjetaGrande('${nombre}', '${imagen}', '${rol}', '${tipoDuelista}', '${habilidad}', '${ultimate}', '${afiliacion}', \`${descripcion.replace(/'/g, "\\'")}\`)" style="cursor: pointer;">
+                        <tr class="fila-heroe ${rol}" onclick="mostrarTarjetaGrande('${nombre}', '${imagen}', '${rol}', '${subrolActivo}', '${habilidad}', '${ultimate}', '${afiliacion}', \`${descripcion.replace(/'/g, "\\'")}\`)" style="cursor: pointer;">
                             <td data-label="Miniatura">
                                 <img src="${imagen}" alt="Retrato de ${nombre}" class="img-tabla">
                             </td>
                             <td data-label="Héroe"><strong>${nombre}</strong></td>
                             <td data-label="Rol"><span class="badge ${rol}">${rol}</span></td>
                             ${esPaginaDuelistas ? `<td data-label="Estilo"><span class="badge-estilo ${tipoDuelista}">${tipoDuelista}</span></td>` : ''}                           
+                            ${esPaginaEstrategas ? `<td data-label="Estilo"><span class="badge-estratega ${tipoEstratega}">${tipoEstratega}</span></td>` : ''}                           
                             <td data-label="Habilidad">${habilidad}</td>
                             <td data-label="Ultimate">${ultimate}</td>
                             <td data-label="Afiliación">${afiliacion}</td>
@@ -86,19 +95,19 @@ function cargarHeroesPorRol(rolFiltrado, idContenedor, ataqueFiltrado = "Todos",
     xhr.send();
 }
 
-// FUNCIÓN PARA MOSTRAR TARJETA GIGANTE
+// FUNCIÓN PARA MOSTRAR TARJETA GIGANTE (Modificada para que el badge herede las clases correctas)
 function mostrarTarjetaGrande(nombre, imagen, rol, subrol, habilidad, ultimate, afiliacion, descripcion) {
-    // Si ya existe un modal abierto, lo quita para no duplicar
     var modalViejo = document.getElementById("modal-heroe");
     if (modalViejo) modalViejo.remove();
 
-    // crea la estructura del contenedor flotante
     var modal = document.createElement("div");
     modal.id = "modal-heroe";
     modal.className = "modal-overlay";
-    modal.onclick = cerrarTarjetaGrande; // Si dan clic afuera, se cierra
+    modal.onclick = cerrarTarjetaGrande;
 
-    // Aquí pone la tarjeta en grande
+    // Determinamos dinámicamente el nombre de la clase del badge para que el CSS actúe bien
+    var claseBadgeSecundario = rol === "Estratega" ? "badge-estratega" : "badge-estilo";
+
     modal.innerHTML = `
         <div class="tarjeta-grande-content ${rol}" onclick="event.stopPropagation()">
             <button class="btn-cerrar" onclick="cerrarTarjetaGrande()">×</button>
@@ -111,7 +120,7 @@ function mostrarTarjetaGrande(nombre, imagen, rol, subrol, habilidad, ultimate, 
                     <h2>${nombre}</h2>
                     <div class="badges-container">
                         <span class="badge ${rol}">${rol}</span>
-                        ${subrol !== 'N/A' ? `<span class="badge-subrol">${subrol}</span>` : ''}
+                        ${subrol !== 'N/A' ? `<span class="${claseBadgeSecundario} ${subrol}">${subrol}</span>` : ''}
                     </div>
                     <hr class="separador">
                     <p class="desc-grande">${descripcion}</p>

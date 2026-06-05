@@ -49,4 +49,17 @@
         <tipoEstratega>Main Healer</tipoEstratega>
         <imagen>img/Gambito.png</imagen>
     </heroe>
+    <heroe id="H005">
+        <nombre>Mantis</nombre>
+        <rol>Estratega</rol>
+        <habilidad>Inspiración aliada</habilidad>
+        <ultimate>Resurgimiento del alma</ultimate>
+        <afiliacion>Guardianes de la galaxia</afiliacion>
+        <descripcion>Soporte ofensiva que potencia el daño y los ataques críticos de su equipo mediante energía empática, 
+            combinando bufos de ataque constantes con efectos de sueño para frenar en seco los avances enemigos</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>Off Healer</tipoEstratega>
+        <imagen>img/Mantis.png</imagen>
+    </heroe>
 </lista_heroes>

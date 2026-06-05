@@ -184,12 +184,15 @@ article {
     color: white;
 }
 
-.badge-estratega.MainHealer {
-    background-color: #26de81;
+/* Selección por atributo parcial con el espacio correcto que viene de tu XML */
+.badge-estratega[class*="Main Healer"] {
+    background-color: #88f108 !important;
+    color: black;
 }
 
-.badge-estratega.OffHealer {
-    background-color: #a8e6cf;
+.badge-estratega[class*="Off Healer"] {
+    background-color: #216405 !important;
+    color: black;
 }
 
 /* ==========================================
@@ -264,7 +267,7 @@ article {
 }
 
 /* ==========================================
-   VENTANITA DE INFORMACIÓN OPERATIVA (MODAL FUERA DE MEDIA QUERIES)
+   VENTANITA DE INFORMACIÓN
    ========================================== */
 .modal-overlay {
     position: fixed;
@@ -407,7 +410,7 @@ article {
 }
 
 /* ==========================================
-   MEDIA QUERIES - RESPONSIVIDAD PARA CELULAR
+   MEDIA QUERIES - PARA CELULAR
    ========================================== */
 @media (max-width: 768px) {
     nav ul {
