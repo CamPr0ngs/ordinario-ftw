@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Rivals - Vanguardias</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Todos los Héroes</a></li>
+                <li><a href="vanguardias.html" class="active">Vanguardias</a></li>
+                <li><a href="duelistas.html">Duelistas</a></li>
+                <li><a href="estrategas.html">Estrategas</a></li>
+                <li><a href="acerca-de.html">Acerca de</a></li>
+                <li><a href="sintesis.html">Autor</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Clase: Vanguardia</h1>
+        <p style="text-align: center; color: #a0a0a5; max-width: 600px; margin: 0 auto 30px auto;">
+            Las Vanguardias son los combatientes cuerpo a cuerpo del equipo. Su enfoque se basa en el daño directo,
+            la defensa y el control del campo de batalla. Son los primeros en entrar en combate y los últimos en
+            retirarse.
+            Su resistencia y capacidad para absorber daño los convierten en el escudo del equipo, mientras que su
+            habilidad para
+            controlar a los enemigos los hace esenciales para mantener la línea del frente.
+        </p>
+
+        <section style="text-align: center; margin-bottom: 25px;">
+            <label for="filtro-estilo" style="color: #a0a0a5; margin-right: 10px; font-weight: bold;">Estilo de
+                Juego:</label>
+            <select id="filtro-estilo" onchange="filtrarVanguardias()"
+                style="padding: 6px 12px; background: #1a1a1e; color: white; border: 1px solid #267ede; border-radius: 4px;">
+                <option value="Todos">-- Todos los Estilos --</option>
+                <option value="Main Tank">Main Tank</option>
+                <option value="Off Tank">Off Tank</option>
+            </select>
+        </section>
+
+        <section id="galeria-vanguardias" style="overflow-x: auto;"></section>
+    </main>
+
+    <script src="js/motor.js"></script>
+    <script>
+        function filtrarVanguardias() {
+            var estilo = document.getElementById("filtro-estilo").value;
+            // envía el rol Vanguardia, el contenedor y el estilo seleccionado
+            cargarHeroesPorRol("Vanguardia", "galeria-vanguardias", "Todos", estilo);
+        }
+
+        window.onload = function () {
+            filtrarVanguardias();
+        };
+    </script>
+</body>
+
+</html>>

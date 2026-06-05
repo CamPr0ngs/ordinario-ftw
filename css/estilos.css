@@ -174,24 +174,24 @@ article {
     background-color: #ff4d4d;
 }
 
-.badge-vanguardia.MainTank {
-    background-color: #2980b9;
+.badge-vanguardia[class*="Main Tank"] {
+    background-color: #206a9b;
     color: white;
 }
 
-.badge-vanguardia.OffTank {
-    background-color: #3498db;
+.badge-vanguardia[class*="Off Tank"] {
+    background-color: #0d3c5c;
     color: white;
+    
 }
 
-/* Selección por atributo parcial con el espacio correcto que viene de tu XML */
 .badge-estratega[class*="Main Healer"] {
-    background-color: #88f108 !important;
+    background-color: #88f108;
     color: black;
 }
 
 .badge-estratega[class*="Off Healer"] {
-    background-color: #216405 !important;
+    background-color: #216405;
     color: black;
 }
 
@@ -321,8 +321,7 @@ article {
     position: relative;
     height: 100%;
     display: flex;
-    align-items: flex-end;
-    /* Sienta al personaje en el suelo de la ventana */
+    align-items: flex-end;    
     justify-content: center;
     background: radial-gradient(circle at center, #18181c 0%, #0b0b0d 100%);
     overflow: hidden;
@@ -410,7 +409,7 @@ article {
 }
 
 /* ==========================================
-   MEDIA QUERIES - PARA CELULAR
+   PARA CELULAR
    ========================================== */
 @media (max-width: 768px) {
     nav ul {

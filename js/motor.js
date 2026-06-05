@@ -14,6 +14,7 @@ function cargarHeroesPorRol(rolFiltrado, idContenedor, ataqueFiltrado = "Todos",
 
             var esPaginaDuelistas = (rolFiltrado === "Duelista");
             var esPaginaEstrategas = (rolFiltrado === "Estratega");
+            var esPaginaVanguardias = (rolFiltrado === "Vanguardia");
 
             // empieza a armar la estructura de la tabla
             var tablaHtml = `
@@ -25,6 +26,7 @@ function cargarHeroesPorRol(rolFiltrado, idContenedor, ataqueFiltrado = "Todos",
                             <th scope="col">Rol</th>
                             ${esPaginaDuelistas ? '<th scope="col">Estilo Duelista</th>' : ''} 
                             ${esPaginaEstrategas ? '<th scope="col">Estilo Estratega</th>' : ''}                               
+                            ${esPaginaVanguardias ? '<th scope="col">Estilo Vanguardia</th>' : ''}
                             <th scope="col">Habilidad Principal</th>
                             <th scope="col">Ultimate</th>
                             <th scope="col">Afiliación</th>
@@ -43,6 +45,7 @@ function cargarHeroesPorRol(rolFiltrado, idContenedor, ataqueFiltrado = "Todos",
                 // Saca el tipo de personajes para filtrar
                 var tipoDuelista = heroes[i].getElementsByTagName("tipoDuelista")[0].textContent;
                 var tipoEstratega = heroes[i].getElementsByTagName("tipoEstratega")[0].textContent;
+                var tipoVanguardia = heroes[i].getElementsByTagName("tipoVanguardia")[0].textContent;
 
                 // LÓGICA DE FILTRADO
                 var cumpleRol = (rolFiltrado === "Todos" || rol === rolFiltrado);
@@ -52,6 +55,8 @@ function cargarHeroesPorRol(rolFiltrado, idContenedor, ataqueFiltrado = "Todos",
                     cumpleSubRol = (tipoSubRolFiltrado === "Todos" || tipoDuelista === tipoSubRolFiltrado);
                 } else if (esPaginaEstrategas) {
                     cumpleSubRol = (tipoSubRolFiltrado === "Todos" || tipoEstratega === tipoSubRolFiltrado);
+                } else if (esPaginaVanguardias) {
+                    cumpleSubRol = (tipoSubRolFiltrado === "Todos" || tipoVanguardia === tipoSubRolFiltrado);
                 }
 
                 // Si el personaje pasa los filtros, lo pone en la tabla
@@ -65,7 +70,7 @@ function cargarHeroesPorRol(rolFiltrado, idContenedor, ataqueFiltrado = "Todos",
                     var imagen = heroes[i].getElementsByTagName("imagen")[0].textContent;
 
                     // Detecta cuál subrol está activo dinámicamente para mandarlo a la tarjeta grande
-                    var subrolActivo = esPaginaDuelistas ? tipoDuelista : (esPaginaEstrategas ? tipoEstratega : 'N/A');
+                    var subrolActivo = esPaginaDuelistas ? tipoDuelista : (esPaginaEstrategas ? tipoEstratega : (esPaginaVanguardias ? tipoVanguardia : 'N/A'));
 
                     tablaHtml += `
                         <tr class="fila-heroe ${rol}" onclick="mostrarTarjetaGrande('${nombre}', '${imagen}', '${rol}', '${subrolActivo}', '${habilidad}', '${ultimate}', '${afiliacion}', \`${descripcion.replace(/'/g, "\\'")}\`)" style="cursor: pointer;">
@@ -76,6 +81,7 @@ function cargarHeroesPorRol(rolFiltrado, idContenedor, ataqueFiltrado = "Todos",
                             <td data-label="Rol"><span class="badge ${rol}">${rol}</span></td>
                             ${esPaginaDuelistas ? `<td data-label="Estilo"><span class="badge-estilo ${tipoDuelista}">${tipoDuelista}</span></td>` : ''}                           
                             ${esPaginaEstrategas ? `<td data-label="Estilo"><span class="badge-estratega ${tipoEstratega}">${tipoEstratega}</span></td>` : ''}                           
+                            ${esPaginaVanguardias ? `<td data-label="Estilo"><span class="badge-vanguardia ${tipoVanguardia}">${tipoVanguardia}</span></td>` : ''}                           
                             <td data-label="Habilidad">${habilidad}</td>
                             <td data-label="Ultimate">${ultimate}</td>
                             <td data-label="Afiliación">${afiliacion}</td>
@@ -95,7 +101,7 @@ function cargarHeroesPorRol(rolFiltrado, idContenedor, ataqueFiltrado = "Todos",
     xhr.send();
 }
 
-// FUNCIÓN PARA MOSTRAR TARJETA GIGANTE (Modificada para que el badge herede las clases correctas)
+// FUNCIÓN PARA MOSTRAR TARJETA GIGANTE
 function mostrarTarjetaGrande(nombre, imagen, rol, subrol, habilidad, ultimate, afiliacion, descripcion) {
     var modalViejo = document.getElementById("modal-heroe");
     if (modalViejo) modalViejo.remove();
@@ -106,7 +112,7 @@ function mostrarTarjetaGrande(nombre, imagen, rol, subrol, habilidad, ultimate, 
     modal.onclick = cerrarTarjetaGrande;
 
     // Determinamos dinámicamente el nombre de la clase del badge para que el CSS actúe bien
-    var claseBadgeSecundario = rol === "Estratega" ? "badge-estratega" : "badge-estilo";
+    var claseBadgeSecundario = rol === "Estratega" ? "badge-estratega" : (rol === "Vanguardia" ? "badge-vanguardia" : "badge-estilo");
 
     modal.innerHTML = `
         <div class="tarjeta-grande-content ${rol}" onclick="event.stopPropagation()">
