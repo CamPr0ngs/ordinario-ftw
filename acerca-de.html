@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Rivals - Acerca de</title>    
+    <link rel="stylesheet" href="css/estilos.css">    
+    <link rel="stylesheet" href="css/acerca.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Todos los Héroes</a></li>
+                <li><a href="vanguardias.html">Vanguardias</a></li>
+                <li><a href="duelistas.html">Duelistas</a></li>
+                <li><a href="estrategas.html">Estrategas</a></li>
+                <li><a href="acerca-de.html" class="active">Acerca de</a></li>
+                <li><a href="sintesis.html">Autor</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>¿Cómo funciona el proyecto?</h1>
+        <p style="text-align: center; color: #a0a0a5; max-width: 700px; margin: 0 auto 30px auto; line-height: 1.6;">
+            Una base de datos táctica pensada para buscar y filtrar la información básica de los personajes de <span
+                class="text-rivals">Marvel Rivals</span>
+            al instante, usando tecnologías nativas del navegador y sin depender de ningún framework externo.
+        </p>
+
+        <!-- SECCIÓN 1: ¿POR QUÉ ELEGÍ ESTE TEMA? -->
+        <div class="bloque-informativo">
+            <div class="bloque-grid">
+                <div class="bloque-texto">
+                    <h2
+                        style="color: #ffffff; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-size: 18px; border-bottom: 1px solid #2a2a30; padding-bottom: 10px;">
+                        ¿Por qué elegí este tema?
+                    </h2>
+                    <p style="color: #a0a0a5; line-height: 1.6; font-size: 14px; margin: 0;">
+                        La elección de <span class="text-rivals">Marvel Rivals</span> como el núcleo de esta base de
+                        datos táctica no fue una
+                        casualidad, sino una decisión completamente deliberada para potenciar el proceso de aprendizaje.
+                        Creo
+                        firmemente que la mejor manera de dominar, no solo el desarrollo web sino cualquier cosa, es
+                        trabajando sobre un
+                        entorno que realmente nos entusiasme, divierta y concumamos en nuestro día a día. Al trasladar
+                        los conceptos de
+                        la EE a un videojuego que sigo de cerca, el flujo de desarrollo dejó de ser una simple
+                        asignación
+                        escolar y se transformó en un proyecto que me daba gusto desarrollar, facilitándolo muchísimo.
+                    </p>
+                    <p style="color: #a0a0a5; line-height: 1.6; font-size: 14px; margin-top: 15px;">
+                        Esa conexión directa con el tema cambia por completo el enfoque: como conozco el
+                        juego, me volví mucho más exigente con cosas como la interfaz y que se viera bien. Traté de no
+                        conformarme
+                        con que el código "solo funcione", sino que busqué que los colores hicieran match con la
+                        identidad visual del título, que los resplandores reaccionaran de forma limpia y que la
+                        separación de
+                        roles respete la lógica competitiva real. Al final, este proyecto es el balance perfecto entre
+                        cumplir
+                        con una arquitectura técnica estricta y el gusto que le tengo al juego, demostrando que las
+                        herramientas de
+                        ingeniería pueden aplicarse para cualquier tipo de información digital.
+                    </p>
+                </div>                
+                <div>
+                    <img src="svg/control.svg" alt="Icono Control" class="icono-lateral">
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 2: OBJETIVO DEL PROYECTO -->
+        <div class="bloque-informativo">
+            <div class="bloque-grid">
+                <div class="bloque-texto">
+                    <h2
+                        style="color: #ffffff; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-size: 18px; border-bottom: 1px solid #2a2a30; padding-bottom: 10px;">
+                        Objetivo del Proyecto
+                    </h2>
+                    <p style="color: #a0a0a5; line-height: 1.6; font-size: 14px; margin-bottom: 20px;">
+                        La idea principal de esta aplicación es centralizar e interactuar con el catálogo de héroes de
+                        <span class="text-rivals">Marvel Rivals</span> de forma
+                        dinámica. En lugar de estar recargando la página a cada rato, la interfaz te permite separar a
+                        los
+                        personajes en sus tres roles de combate (<span class="text-vanguardia">Vanguardias</span>, <span
+                            class="text-duelista">Duelistas</span> y <span class="text-estratega">Estrategas</span>) al
+                        instante, haciendo que la consulta de habilidades e inteligencia de campo sea fluida y rápida.
+                    </p>
+
+                    <h3
+                        style="color: #ffffff; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; font-size: 14px;">
+                        Puntos clave del desarrollo
+                    </h3>
+                    <ul style="color: #d1d1d6; padding-left: 20px; line-height: 1.7; font-size: 13.5px; margin: 0;">
+                        <li><strong>Todo corre en el cliente:</strong> El procesamiento de los datos, el manejo del
+                            árbol de
+                            nodos y el renderizado en pantalla se hacen directamente en el navegador con JavaScript
+                            nativo,
+                            asegurando que la página responda al segundo.</li>
+                        <li><strong>Datos separados del diseño:</strong> Toda la información de los héroes (XML) está
+                            completamente aislada de la vista (HTML5/CSS3). Esto permite agregar personajes o cambiar
+                            estadísticas desde afuera sin tener que tocar el código de la interfaz web.</li>
+                        <li><strong>Estructura limpia y validada:</strong> Se implementó un esquema de validación que
+                            revisa que
+                            los datos no se rompan, obligando al sistema a respetar reglas clave como IDs únicos para
+                            cada
+                            héroe, consistencia en los roles y rutas correctas para las imágenes.</li>
+                    </ul>
+                </div>                
+                <div>
+                    <img src="svg/radar.svg" alt="Icono Radar" class="icono-lateral">
+                </div>
+            </div>
+        </div>
+
+        <!-- CUADRÍCULA DE COMPONENTES TÉCNICOS-->
+        <div class="tech-container">
+            <div class="tech-card">
+                <h3>1. Base de datos (XML)</h3>
+                <p>Toda la información de los héroes está guardada en un archivo estructurado independiente.</p>
+                <ul>
+                    <li>Datos separados del diseño.</li>
+                    <li>Nodos organizados por jerarquía.</li>
+                </ul>
+            </div>
+
+            <div class="tech-card">
+                <h3>2. Validación (DTD)</h3>
+                <p>Asegura el orden estricto de los elementos para que la información no se rompa ni se duplique.</p>
+                <ul>
+                    <li>Obliga a usar IDs únicos.</li>
+                    <li>Valida la estructura del documento.</li>
+                </ul>
+            </div>
+
+            <div class="tech-card">
+                <h3>3. Motor Dinámico (AJAX)</h3>
+                <p>Carga el archivo XML de forma asíncrona usando JS nativo para actualizar el contenido en tiempo real.
+                </p>
+                <ul>
+                    <li>Peticiones rápidas y limpias.</li>
+                    <li>Filtrado interactivo sin recargas.</li>
+                </ul>
+            </div>
+
+            <div class="tech-card">
+                <h3>4. Diseño (CSS)</h3>
+                <p>Estilizado modular basado en un diseño de tablero oscuro responsivo con efectos de iluminación neón.
+                </p>
+                <ul>
+                    <li>Estructuras con Grid y Flexbox.</li>
+                    <li>Componentes visuales ordenados.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
