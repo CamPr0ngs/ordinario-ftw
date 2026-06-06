@@ -1,0 +1,122 @@
+/* Sección de Bienvenida */
+.hero-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(rgba(11, 11, 13, 0.85), rgba(11, 11, 13, 0.85)),
+                url('../img/portada.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    border: 1px solid #232329;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+}
+
+.hero-section p {
+    color: #a0a0a5;
+    font-size: 16px;
+    max-width: 700px;
+    margin: 15px auto 0 auto;
+    line-height: 1.6;
+}
+
+/* Grid de Roles */
+.roles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* Tarjetas de Clases Individuales */
+.tarjeta-rol {
+    background-color: #1a1a1e;
+    border: 1px solid #2a2a30;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.tarjeta-rol h3 {
+    font-size: 24px;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tarjeta-rol p {
+    color: #d1d1d6;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    min-height: 63px; /* Mantiene los botones alineados horizontalmente */
+}
+
+/* Botones de Acción Estilizados */
+.btn-enlace {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.btn-enlace:hover {
+    transform: translateY(-2px);
+}
+
+/* Vanguardias (Azul) */
+.tarjeta-rol.vanguardia-card:hover {
+    border-color: #267ede;
+    box-shadow: 0 0 15px rgba(38, 126, 222, 0.2);
+}
+.tarjeta-rol.vanguardia-card h3 { color: #267ede; }
+.tarjeta-rol.vanguardia-card .btn-enlace { background-color: #267ede; color: black; }
+.tarjeta-rol.vanguardia-card .btn-enlace:hover { box-shadow: 0 0 12px rgba(38, 126, 222, 0.5); }
+
+/* Duelistas (Amarillo) */
+.tarjeta-rol.duelista-card:hover {
+    border-color: #fff200;
+    box-shadow: 0 0 15px rgba(255, 242, 0, 0.2);
+}
+.tarjeta-rol.duelista-card h3 { color: #fff200; }
+.tarjeta-rol.duelista-card .btn-enlace { background-color: #fff200; color: black; }
+.tarjeta-rol.duelista-card .btn-enlace:hover { box-shadow: 0 0 12px rgba(255, 242, 0, 0.5); }
+
+/* Estrategas (Verde) */
+.tarjeta-rol.estratega-card:hover {
+    border-color: #26de81;
+    box-shadow: 0 0 15px rgba(38, 222, 129, 0.2);
+}
+.tarjeta-rol.estratega-card h3 { color: #26de81; }
+.tarjeta-rol.estratega-card .btn-enlace { background-color: #26de81; color: black; }
+.tarjeta-rol.estratega-card .btn-enlace:hover { box-shadow: 0 0 12px rgba(38, 222, 129, 0.5); }
+
+/*Diseño para los íconos de las tarjetas*/
+
+.tarjeta-rol.duelista-card:hover .icono-tarjeta {    
+    filter: drop-shadow(0 0 10px rgba(255, 242, 0, 0.8));
+}
+
+.tarjeta-rol.estratega-card:hover .icono-tarjeta {    
+    filter: drop-shadow(0 0 10px rgba(38, 222, 129, 0.85));
+}
+
+.tarjeta-rol.vanguardia-card:hover .icono-tarjeta {    
+    filter: drop-shadow(0 0 10px rgba(38, 126, 222, 0.85));
+}
+
+.icono-tarjeta {
+    width: 90px;
+    height: 90px;    
+    object-fit: contain;
+    margin: 10px auto 20px auto;
+    display: block;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.6));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}

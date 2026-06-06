@@ -7,7 +7,8 @@
         <habilidad>Escudo de los Serafíns</habilidad>
         <ultimate>Ojo de Agamotto</ultimate>
         <afiliacion>Avengers</afiliacion>
-        <descripcion>El Hechicero Supremo que abre portales, manipula el tiempo y protege a su equipo para asegurar la victoria.</descripcion>
+        <descripcion>El Hechicero Supremo que abre portales, manipula el tiempo y protege a su
+            equipo para asegurar la victoria.</descripcion>
         <tipoDuelista>N/A</tipoDuelista>
         <tipoVanguardia>Main Tank</tipoVanguardia>
         <tipoEstratega>Off Healer</tipoEstratega>
@@ -17,9 +18,10 @@
         <nombre>Hela</nombre>
         <rol>Duelista</rol>
         <habilidad>Espadas Nocturnas</habilidad>
-        <ultimate>Diosa de la Muerte</ultimate>        
+        <ultimate>Diosa de la Muerte</ultimate>
         <afiliacion>Asgard</afiliacion>
-        <descripcion>La Diosa de la Muerte, lanza ráfagas de espadas nocturnas altamente precisas para acabar con sus rivales.</descripcion>
+        <descripcion>La Diosa de la Muerte, lanza ráfagas de espadas nocturnas altamente precisas
+            para acabar con sus rivales.</descripcion>
         <tipoDuelista>Poke</tipoDuelista>
         <tipoVanguardia>N/A</tipoVanguardia>
         <tipoEstratega>N/A</tipoEstratega>
@@ -31,7 +33,8 @@
         <habilidad>Trampas Arácnidas</habilidad>
         <ultimate>Barrido de Arañas</ultimate>
         <afiliacion>Spider-Verse</afiliacion>
-        <descripcion>Pilota su poderoso traje SP//dr para colocar trampas de nido aránido y realentizar el avance enemigo, a la vez que les hace daño.</descripcion>
+        <descripcion>Pilota su poderoso traje SP//dr para colocar trampas de nido aránido y
+            realentizar el avance enemigo, a la vez que les hace daño.</descripcion>
         <tipoDuelista>N/A</tipoDuelista>
         <tipoVanguardia>Off Tank</tipoVanguardia>
         <tipoEstratega>Off Healer</tipoEstratega>
@@ -43,7 +46,8 @@
         <habilidad>Cartas cinéticas</habilidad>
         <ultimate>Escalera Real Furiosa</ultimate>
         <afiliacion>X-Men</afiliacion>
-        <descripcion>El carismático mutante que carga objetos con energía cinética, lanzando ráfagas de cartas explosivas para infligir gran daño a distancia y curar a sus aliados.</descripcion>
+        <descripcion>El carismático mutante que carga objetos con energía cinética, lanzando ráfagas
+            de cartas explosivas para infligir gran daño a distancia y curar a sus aliados.</descripcion>
         <tipoDuelista>N/A</tipoDuelista>
         <tipoVanguardia>N/A</tipoVanguardia>
         <tipoEstratega>Main Healer</tipoEstratega>
@@ -55,11 +59,27 @@
         <habilidad>Inspiración aliada</habilidad>
         <ultimate>Resurgimiento del alma</ultimate>
         <afiliacion>Guardianes de la galaxia</afiliacion>
-        <descripcion>Soporte ofensiva que potencia el daño y los ataques críticos de su equipo mediante energía empática, 
-            combinando bufos de ataque constantes con efectos de sueño para frenar en seco los avances enemigos</descripcion>
+        <descripcion>Soporte ofensiva que potencia el daño y los ataques críticos de su equipo
+            mediante energía empática, combinando bufos de ataque constantes con efectos de sueño
+            para frenar en seco los avances enemigos</descripcion>
         <tipoDuelista>N/A</tipoDuelista>
         <tipoVanguardia>N/A</tipoVanguardia>
         <tipoEstratega>Off Healer</tipoEstratega>
         <imagen>img/Mantis.png</imagen>
+    </heroe>
+    <heroe id="H006">
+        <nombre>Devil Dinosaur</nombre>
+        <rol>Vanguardia</rol>
+        <habilidad>Mordida Primal</habilidad>
+        <ultimate>Furia de Bestia Diabólica</ultimate>
+        <afiliacion>MoonGirl</afiliacion>
+        <descripcion>Devil Dinosaur es en realidad un gigante con colmillos afilados como navajas, una cola poderosa y 
+            barrida, un rugido atronador y un escudo de campo de fuerza regalado por su compañera humana Moon Girl, no
+            es de extrañar que tanto héroes como villanos se sientan intimidados por esta potencia
+            prehistórica</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>Main Tank</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/dinosaurio.png</imagen>
     </heroe>
 </lista_heroes>
