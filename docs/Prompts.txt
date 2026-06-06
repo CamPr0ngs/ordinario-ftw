@@ -1,0 +1,182 @@
+PROMPTS UTILIZADOS DURANTE EL DESARROLLO
+Proyecto: Plataforma Táctica de Consulta Dinámica - Marvel Rivals
+Materia: Fundamentos de Tecnologías Web 2026
+=========================================================
+
+
+P: ¿Qué diferencia hay entre DTD y XSD, cuál debería usar para un proyecto escolar?
+R: DTD es más simple y está soportado nativamente por los navegadores, ideal para proyectos
+   escolares. XSD es más potente pero requiere herramientas externas para validar. Para un
+   proyecto que corre directo en el navegador, DTD es la opción más práctica.
+
+
+P: ¿Cómo se declara un atributo ID en DTD que sea obligatorio y único?
+R: Se declara con <!ATTLIST elemento id ID #REQUIRED>. El tipo ID garantiza que el valor
+   sea único en todo el documento y #REQUIRED lo hace obligatorio.
+
+
+P: Mi XML no carga en el navegador, dice "invalid token" en línea 3, ¿qué puede ser?
+R: Probablemente es un problema de codificación o un carácter especial sin escapar. Revisa
+   que el archivo declare <?xml version="1.0" encoding="UTF-8"?> en la primera línea y que
+   los caracteres como <, > o & estén escritos como &lt; &gt; &amp; dentro del contenido.
+
+
+P: ¿Puedo referenciar un DTD externo desde el XML o tiene que estar dentro del mismo archivo?
+R: Puedes referenciarlo de forma externa con <!DOCTYPE raiz SYSTEM "archivo.dtd">. El DTD
+   puede estar en un archivo separado, lo cual es mejor práctica porque mantiene la
+   validación separada de los datos.
+
+
+P: ¿Cómo leo un archivo XML con XMLHttpRequest en JavaScript puro, sin fetch?
+R: Creas una instancia con var xhr = new XMLHttpRequest(), luego xhr.open("GET", "archivo.xml", true)
+   y defines xhr.onreadystatechange para manejar la respuesta. Cuando readyState === 4 y
+   status === 200, accedes al XML parseado en xhr.responseXML.
+
+
+P: ¿Qué significa readyState === 4 y status === 200 exactamente?
+R: readyState 4 significa que la petición completó y la respuesta fue recibida por completo.
+   status 200 es el código HTTP que indica que el servidor respondió correctamente. Ambas
+   condiciones juntas garantizan que los datos llegaron bien antes de procesarlos.
+
+
+P: ¿Cómo accedo a un nodo específico dentro de responseXML con getElementsByTagName?
+R: Con xmlDoc.getElementsByTagName("nombreDelNodo") obtienes una lista de todos los elementos
+   con ese nombre. Accedes a uno específico por índice, por ejemplo [0] para el primero, y
+   luego con .textContent extraes el texto interior del nodo.
+
+
+P: Mi función filtra bien la primera vez pero si cambio el select dos veces deja de funcionar, ¿por qué?
+R: Seguramente estás acumulando listeners o no limpias el contenedor antes de volver a
+   renderizar. Asegúrate de vaciar el innerHTML del contenedor al inicio de cada llamada
+   con contenedor.innerHTML = "" antes de agregar el nuevo contenido filtrado.
+
+
+P: ¿Cómo creo elementos HTML dinámicamente con JS y los meto dentro de un div existente?
+R: Puedes usar innerHTML para insertar HTML como string directamente, o document.createElement
+   para crear nodos uno por uno y luego appendChild para agregarlos. Para tablas grandes,
+   construir el HTML como string y asignarlo a innerHTML es más eficiente.
+
+
+P: ¿Cuándo uso article vs section, no entiendo la diferencia?
+R: Section agrupa contenido relacionado dentro de una página, como un capítulo. Article es
+   para contenido independiente que tendría sentido por sí solo fuera de la página, como
+   una entrada de blog o una tarjeta de producto. Si el contenido puede "vivir solo",
+   es article; si necesita contexto de la página, es section.
+
+
+P: ¿El label tiene que tener el mismo valor en "for" que el "id" del input?
+R: Sí, exactamente. El atributo for del label debe coincidir con el id del input al que
+   pertenece. Así el navegador los vincula y al hacer clic en el label se activa el campo,
+   además de que los lectores de pantalla los asocian correctamente para accesibilidad.
+
+
+P: ¿Para qué sirve scope="col" en un th de tabla?
+R: Le indica a los lectores de pantalla y al navegador que ese encabezado corresponde a
+   una columna completa. Mejora la accesibilidad porque permite que tecnologías asistivas
+   anuncien correctamente a qué columna pertenece cada celda cuando el usuario navega
+   la tabla con teclado.
+
+
+P: ¿Cómo funciona grid-template-columns: auto 1fr, qué significa el auto ahí?
+R: auto hace que esa columna tome el ancho mínimo necesario para su contenido, en este caso
+   el ancho de la foto. 1fr hace que la segunda columna tome todo el espacio restante
+   disponible. Es útil para layouts de foto + texto donde la imagen tiene tamaño fijo.
+
+
+P: Mis media queries no están funcionando, tengo el meta viewport puesto.
+R: Revisa que el meta viewport esté correcto: <meta name="viewport" content="width=device-width,
+   initial-scale=1.0">. También verifica que las media queries estén en el archivo CSS
+   vinculado y no haya errores de sintaxis, como llaves sin cerrar antes de ellas.
+
+
+P: ¿Cómo hago que una imagen sea circular con CSS?
+R: Con border-radius: 50% en la imagen. Para que funcione correctamente la imagen debe
+   tener el mismo ancho y alto (ser cuadrada), y puedes agregar object-fit: cover para
+   que la imagen no se deforme si sus proporciones originales no son cuadradas.
+
+
+P: ¿Puedo usar imágenes SVG como src en una etiqueta img normal?
+R: Sí, los SVG funcionan perfectamente como src en una etiqueta img. La ventaja es que
+   escalan sin perder calidad a cualquier tamaño. Asegúrate de incluir el atributo alt
+   con una descripción para mantener la accesibilidad.
+
+
+P: ¿Qué es GitHub Pages y cómo se activa en un repositorio?
+R: GitHub Pages es un servicio gratuito de GitHub que publica el contenido de tu repositorio
+   como un sitio web accesible públicamente. Se activa desde Settings > Pages en tu repo,
+   seleccionando la rama main como fuente. En unos minutos el sitio queda disponible en
+   tu URL de GitHub Pages.
+
+
+P: Si mi repo se llama ordinario-ftw, ¿cuál sería la URL de GitHub Pages?
+R: La URL sería https://[tu-usuario].github.io/ordinario-ftw/. El formato siempre es
+   https://[usuario].github.io/[nombre-del-repo]/. Esta es la URL que debes entregar
+   al profesor para que revise el sitio en vivo, es diferente a la URL del repositorio
+   que sería https://github.com/[usuario]/ordinario-ftw.
+
+
+P: ¿Cuál es la diferencia entre la URL del repo y la URL de GitHub Pages?
+R: La URL del repo (github.com/usuario/repo) muestra el código fuente y la estructura
+   de archivos del proyecto. La URL de Pages (usuario.github.io/repo) muestra el sitio
+   web publicado tal como lo vería cualquier visitante. El profesor necesita la de Pages
+   para revisar que el sitio funcione correctamente en el navegador.
+
+
+P: ¿Cómo escapo comillas simples dentro de un template literal de JavaScript?
+R: Puedes usar el escape con backslash \' dentro del string, o mejor aún, usar un método
+   como replace(/'/g, "\\'") para reemplazarlas automáticamente. Esto es importante cuando
+   pasas texto como parámetro en atributos onclick dentro del HTML generado dinámicamente.
+
+
+P: ¿Cómo hago que un elemento resalte al pasar el mouse encima?
+R: Con la pseudo-clase :hover en CSS. Por ejemplo, .tarjeta:hover { background-color: #2a2a30; }
+   cambia el fondo al pasar el mouse. Para que la transición se vea suave agrega
+   transition: background-color 0.3s ease en el elemento base, no en el :hover.
+
+
+P: Quiero que al hacer hover en una tarjeta aparezca un borde de color, ¿cómo lo hago sin que mueva el layout?
+R: Usa box-shadow en lugar de border para el efecto hover. El border ocupa espacio y puede
+   mover los elementos, pero box-shadow: 0 0 0 2px #fff200 simula un borde exterior sin
+   afectar el layout. Combínalo con transition: box-shadow 0.3s ease para que aparezca suavemente.
+
+
+P: ¿Cómo hago un efecto de brillo o resplandor alrededor de un elemento con CSS?
+R: Con box-shadow usando valores de desenfoque altos y color semitransparente, por ejemplo
+   box-shadow: 0 0 20px rgba(255, 242, 0, 0.3). Puedes apilarlo con la sombra normal
+   separando con coma: box-shadow: 0 4px 15px rgba(0,0,0,0.5), 0 0 20px rgba(255,242,0,0.2).
+
+
+P: ¿Cómo cambio el color del texto de un elemento hijo cuando hago hover en el contenedor padre?
+R: En CSS puedes encadenar el selector: .padre:hover .hijo { color: #fff200; }. Esto aplica
+   el estilo al hijo solo cuando el mouse está sobre el padre, sin necesidad de JavaScript.
+   Funciona con cualquier propiedad CSS, no solo color.
+
+
+P: ¿Cómo hago que el cursor cambie a una manita cuando paso el mouse sobre algo que no es un enlace?
+R: Con cursor: pointer en el elemento. Por ejemplo, una fila de tabla clickeable llevaría
+   style="cursor: pointer" o la clase CSS correspondiente con cursor: pointer. Así el
+   usuario entiende visualmente que el elemento es interactivo.
+
+
+P: ¿Cómo animo el color de un borde para que cambie suavemente al hacer hover?
+R: Agrega transition: border-color 0.3s ease en el elemento base y cambia el border-color
+   en el :hover. Por ejemplo: .card { border-color: #232329; transition: border-color 0.3s ease; }
+   y .card:hover { border-color: #fff200; }. La transición se aplica al estado base, no al hover.
+
+
+P: ¿Hay alguna forma de hacer que toda una fila de una tabla sea clickeable?
+R: Puedes agregar onclick directamente al elemento <tr> y darle cursor: pointer con CSS.
+   En la función del onclick llamas al JS que necesites. No es necesario poner el enlace
+   en cada celda individual, con el evento en el tr es suficiente.
+
+
+P: ¿Cómo hago que un div ocupe todo el ancho disponible pero tenga un máximo para no verse raro en pantallas grandes?
+R: Con max-width y margin: 0 auto. Por ejemplo: .contenedor { width: 100%; max-width: 900px;
+   margin: 0 auto; }. El width: 100% lo hace flexible en pantallas chicas y el max-width
+   lo limita en pantallas grandes. El margin auto lo centra horizontalmente.
+
+
+P: ¿Cómo hago que el nav se quede fijo arriba mientras hago scroll?
+R: Con position: sticky; top: 0 en el elemento nav o header. A diferencia de position: fixed,
+   sticky respeta el flujo del documento y no saca al elemento de su lugar, por lo que
+   el contenido de abajo no se esconde debajo de él.
