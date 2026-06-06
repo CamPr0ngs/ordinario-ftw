@@ -1,6 +1,3 @@
-/* ==========================================
-   ESTILOS GENERALES Y PALETA OSCURA
-   ========================================== */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #121214;
@@ -62,10 +59,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
-/* ==========================================
-   DISEÑO DE TABLAS INTEGRADO COMO TARJETAS HORIZONTALES
-   ========================================== */
+/*Empiezan las tarjetas de muestra*/
 .tabla-heroes {
     width: 100%;
     border-collapse: separate;
@@ -132,9 +126,7 @@ article {
     color: #d1d1d6;
 }
 
-/* ==========================================
-   BADGES Y TONOS DE ROLES Y SUB-ROLES
-   ========================================== */
+/*Badges y tonos para roles y subroles*/
 .badge {
     display: inline-block;
     padding: 5px 10px;
@@ -204,9 +196,7 @@ article {
     color: black;
 }
 
-/* ==========================================
-   EFECTOS HOVER CON BRILLOS DE NEÓN
-   ========================================== */
+/* Hovers*/
 .fila-heroe:hover {
     transform: translateY(-3px);
 }
@@ -275,9 +265,7 @@ article {
     border: 1px dashed #2a2a30;
 }
 
-/* ==========================================
-   VENTANITA DE INFORMACIÓN
-   ========================================== */
+/*Ventana en grande para info*/
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -417,9 +405,7 @@ article {
     border-color: #de2626;
 }
 
-/* ==========================================
-   PARA CELULAR
-   ========================================== */
+/*para telefonos*/
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
