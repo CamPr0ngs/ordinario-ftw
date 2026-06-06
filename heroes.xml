@@ -58,7 +58,7 @@
         <rol>Estratega</rol>
         <habilidad>Inspiración aliada</habilidad>
         <ultimate>Resurgimiento del alma</ultimate>
-        <afiliacion>Guardianes de la galaxia</afiliacion>
+        <afiliacion>Guardianes de la Galaxia</afiliacion>
         <descripcion>Soporte ofensiva que potencia el daño y los ataques críticos de su equipo
             mediante energía empática, combinando bufos de ataque constantes con efectos de sueño
             para frenar en seco los avances enemigos</descripcion>
@@ -73,13 +73,82 @@
         <habilidad>Mordida Primal</habilidad>
         <ultimate>Furia de Bestia Diabólica</ultimate>
         <afiliacion>MoonGirl</afiliacion>
-        <descripcion>Devil Dinosaur es en realidad un gigante con colmillos afilados como navajas, una cola poderosa y 
-            barrida, un rugido atronador y un escudo de campo de fuerza regalado por su compañera humana Moon Girl, no
-            es de extrañar que tanto héroes como villanos se sientan intimidados por esta potencia
-            prehistórica</descripcion>
+        <descripcion>Devil Dinosaur es en realidad un gigante con colmillos afilados como navajas,
+            una cola poderosa y barrida, un rugido atronador y un escudo de campo de fuerza regalado
+            por su compañera humana Moon Girl, no es de extrañar que tanto héroes como villanos se
+            sientan intimidados por esta potencia prehistórica</descripcion>
         <tipoDuelista>N/A</tipoDuelista>
         <tipoVanguardia>Main Tank</tipoVanguardia>
         <tipoEstratega>N/A</tipoEstratega>
         <imagen>img/dinosaurio.png</imagen>
+    </heroe>
+    <heroe id="H007">
+        <nombre>Adam Warlock</nombre>
+        <rol>Estratega</rol>
+        <habilidad>Vínculo del alma</habilidad>
+        <ultimate>Resurreción kármica</ultimate>
+        <afiliacion>Guardianes de la Galaxia</afiliacion>
+        <descripcion>Estratega cósmico que enlaza las almas de su equipo para compartir el daño
+            recibido y posee la habilidad única de revivir a sus aliados caídos en combate.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>Off Healer</tipoEstratega>
+        <imagen>img/adam.png</imagen>
+    </heroe>
+    <heroe id="H008">
+        <nombre>Angela</nombre>
+        <rol>Vanguardia</rol>
+        <habilidad>Juicio divino</habilidad>
+        <ultimate>Retribución de Heven</ultimate>
+        <afiliacion>Asgard</afiliacion>
+        <descripcion>Vanguardia ágil y letal que domina el combate cuerpo a cuerpo utilizando sus
+            espadas celestiales y cintas místicas para atrapar a sus objetivos y moverse rápidamente
+            por el aire.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>Off Tank</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>        
+        <imagen>img/angela.png</imagen>
+    </heroe>
+    <heroe id="H009">
+        <nombre>Black Cat</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Recolección del destino</habilidad>
+        <ultimate>Tarjeta de visita</ultimate>
+        <afiliacion>Gremio de ladrones / Spider-Verse</afiliacion>
+        <descripcion>Duelista altamente ágil que utiliza su gancho de agarre y garras para flanquear
+            enemigos, infligir daño rápido a corta distancia y manipular la fortuna para esquivar
+            ataques.</descripcion>
+        <tipoDuelista>Dive</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>        
+        <imagen>img/blackcat.png</imagen>
+    </heroe>
+    <heroe id="H010">
+        <nombre>Black Panter</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Garras de vibranium</habilidad>
+        <ultimate>Descenso de Bast</ultimate>
+        <afiliacion>Wakanda</afiliacion>
+        <descripcion>Duelista ágil experto en combate cuerpo a cuerpo que utiliza saltos
+            acrobáticos, marcas de vibranio para infligir daño extra y escudos de energía para
+            asaltar las líneas enemigas.</descripcion>
+        <tipoDuelista>Dive</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>        
+        <imagen>img/panter.png</imagen>
+    </heroe>
+    <heroe id="H011">
+        <nombre>Black Widow</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Rifle de la habitación roja</habilidad>
+        <ultimate>Explosión de Elctro-Plasma</ultimate>
+        <afiliacion>Avengers</afiliacion>
+        <descripcion>Duelista de precisión a distancia que utiliza un gancho de agarre para
+            reposicionarse rápidamente, bastones eléctricos y armas de fuego para neutralizar
+            objetivos clave con gran agilidad.</descripcion>
+        <tipoDuelista>Poke</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>        
+        <imagen>img/widow.png</imagen>
     </heroe>
 </lista_heroes>
