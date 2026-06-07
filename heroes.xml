@@ -450,7 +450,7 @@
         <rol>Duelista</rol>
         <habilidad>Puño estirado</habilidad>
         <ultimate>Rebote cerebral</ultimate>
-        <afiliacion>4 fantásticos</afiliacion>
+        <afiliacion>4 Fantásticos</afiliacion>
         <descripcion>Pseudo tanque elástico de gran control que aprovecha su cuerpo maleable para
             engancharse y balancearse por el mapa, golpear a múltiples enemigos desde distancias
             sorprendentes y envolver o rebotar proyectiles para proteger a sus aliados.</descripcion>
@@ -473,5 +473,264 @@
         <tipoEstratega>N/A</tipoEstratega>
         <imagen>img/mk.png</imagen>
     </heroe>
-
+    <heroe id="H035">
+        <nombre>Namor</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Tridente de Neptuno</habilidad>
+        <ultimate>Cuerno de Proteo</ultimate>
+        <afiliacion>Atlantis</afiliacion>
+        <descripcion>Es el mejor Anti-Dive del juego. Invoca la fuerza de los océanos, llamando a
+            criaturas marinas para atacar y creando zonas de agua en el campo de batalla para
+            potenciar sus ataques y deslizarse rápidamente.</descripcion>
+        <tipoDuelista>Poke</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/namor.png</imagen>
+    </heroe>
+    <heroe id="H036">
+        <nombre>Phoenix</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Llamas Cósmicas</habilidad>
+        <ultimate>Canción infernal</ultimate>
+        <afiliacion>X-Men</afiliacion>
+        <descripcion>Domina la Fuerza Fénix para desatar llamaradas destructivas, curarse a sí misma
+            a través del fuego y resucitar en medio del combate para mantener la presión sobre el
+            enemigo.</descripcion>
+        <tipoDuelista>Poke</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/phoenix.png</imagen>
+    </heroe>
+    <heroe id="H037">
+        <nombre>Psylocke</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Ballesta Psiónica</habilidad>
+        <ultimate>Danza de la Mariposa</ultimate>
+        <afiliacion>X-Men/Fuerza X</afiliacion>
+        <descripcion>De combate cercano, utiliza sus hojas psíquicas para infligir gran daño,
+            aprovechando su increíble velocidad y sigilo para teletransportarse tras los enemigos y
+            eliminarlos en un parpadeo.</descripcion>
+        <tipoDuelista>Dive</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/psylocke.png</imagen>
+    </heroe>
+    <heroe id="H038">
+        <nombre>Rocket Racoon</nombre>
+        <rol>Estratega</rol>
+        <habilidad>Modo reparación</habilidad>
+        <ultimate>C.Y.A. (Cosmic Yarn Amplifier)</ultimate>
+        <afiliacion>Guardianes de la Galaxia</afiliacion>
+        <descripcion>Estratega brillante y de baja estatura que despliega una una torreta
+            resucitadora, lanza granadas tecnológicas y coloca balizas para potenciar el daño y los
+            escudos de sus aliados.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>Main Healer</tipoEstratega>
+        <imagen>img/rocket.png</imagen>
+    </heroe>
+    <heroe id="H039">
+        <nombre>Rogue</nombre>
+        <rol>Vanguardia</rol>
+        <habilidad>Puño Sobrecargado</habilidad>
+        <ultimate>Rompecorazones</ultimate>
+        <afiliacion>X-Men</afiliacion>
+        <descripcion>La reina del combate cercano capaz de drenar la energía vital y los poderes de
+            sus enemigos para fortalecerse, utilizando la fuerza sobrehumana y el vuelo robados para
+            asaltar las líneas enemigas.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>Off Tank</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/rogue.png</imagen>
+    </heroe>
+    <heroe id="H040">
+        <nombre>Bruja Escarlata</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Control del Caos</habilidad>
+        <ultimate>Ruptura de la realidad</ultimate>
+        <afiliacion>X-Men/Avengers</afiliacion>
+        <descripcion>Duelista de gran alcance que manipula la Magia del Caos para desatar ráfagas de
+            energía mística, controlar el posicionamiento del enemigo distorsionando la realidad y
+            cargar una devastadora explosión en área que arrasa con el equipo contrario.</descripcion>
+        <tipoDuelista>Poke</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/wanda.png</imagen>
+    </heroe>
+    <heroe id="H041">
+        <nombre>Spider-Man</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Poder Arácnido</habilidad>
+        <ultimate>Giro Espectacular</ultimate>
+        <afiliacion>Avengers/Spider-Verse</afiliacion>
+        <descripcion>Tu amigable vecino que domina el espacio balanceándose con sus telarañas,
+            atrapando a los enemigos para inmovilizarlos y ejecutando combos aéreos letales antes de
+            escapar sin dejar rastro.</descripcion>
+        <tipoDuelista>Dive</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/spidey.png</imagen>
+    </heroe>
+    <heroe id="H042">
+        <nombre>Squirrel Girl</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Proyectil bellota</habilidad>
+        <ultimate>Tsunami de Ardillas</ultimate>
+        <afiliacion>Campeones de la Gran Manzana</afiliacion>
+        <descripcion>Duelista absurdamente molesta de media distancia que invoca plagas de ardillas
+            hiperactivas para estorbar el paso, bloquear proyectiles y desgastar la paciencia del
+            enemigo, utilizando una movilidad exasperante para huir saltando por el mapa cuando la
+            atrapan en una pelea de verdad; básicamente, la opción ideal para quienes juegan sin
+            manos y necesitan que las ardillas hagan todo el trabajo.</descripcion>
+        <tipoDuelista>Poke</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/ardilla.png</imagen>
+    </heroe>
+    <heroe id="H043">
+        <nombre>Star-Lord</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Cambio Estelar</habilidad>
+        <ultimate>Leyenda Galáctica</ultimate>
+        <afiliacion>Guardianes de la Galaxia</afiliacion>
+        <descripcion>El líder de los guardianes, tiene gran movilidad aérea que utiliza sus
+            propulsores para deslizarse rápidamente por el mapa mientras acribilla a los enemigos
+            con sus pistolas elementales, activando su música para potenciar sus reflejos y ritmo de
+            disparo.</descripcion>
+        <tipoDuelista>Dive</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/starlord.png</imagen>
+    </heroe>
+    <heroe id="H044">
+        <nombre>Tormenta</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Cuchilla de Viento</habilidad>
+        <ultimate>Huracán Omega</ultimate>
+        <afiliacion>X-Men</afiliacion>
+        <descripcion>Experta en el control climático que domina los cielos para alternar entre
+            feroces tormentas eléctricas que infligen daño continuo en área y ráfagas de viento
+            huracanado que potencian la velocidad y movilidad de todo su equipo.</descripcion>
+        <tipoDuelista>Poke</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/storm.png</imagen>
+    </heroe>
+    <heroe id="H045">
+        <nombre>The Punisher</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Adjudicación/Deliveración</habilidad>
+        <ultimate>Juicio Final</ultimate>
+        <afiliacion>Defenders</afiliacion>
+        <descripcion>Duelista de infantería pesada que desata un arsenal militar devastador a media
+            y larga distancia, alternando entre un rifle de asalto de alta cadencia, una escopeta
+            devastadora a corta distancia y una torreta con ametralladora fija para defender
+            posiciones clave.</descripcion>
+        <tipoDuelista>Poke</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/punisher.png</imagen>
+    </heroe>
+    <heroe id="H046">
+        <nombre>La Mole</nombre>
+        <rol>Vanguardia</rol>
+        <habilidad>Rocky Jab</habilidad>
+        <ultimate>Clobberin Time</ultimate>
+        <afiliacion>4 Fantásticos</afiliacion>
+        <descripcion>Vanguardia imponente de roca sólida que lidera la línea frontal absorbiendo
+            cantidades absurdas de daño, utilizando su fuerza bruta para embestir enemigos, generar
+            ondas de choque en el suelo y aplastar a cualquiera que intente desestabilizar a su
+            equipo.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>Main Tank</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/mole.png</imagen>
+    </heroe>
+    <heroe id="H047">
+        <nombre>Thor</nombre>
+        <rol>Vanguardia</rol>
+        <habilidad>Golpe de Mjolnir</habilidad>
+        <ultimate>Dios del Trueno</ultimate>
+        <afiliacion>Asgard/Avengers</afiliacion>
+        <descripcion>Dios imponente que canaliza el poder del trueno a través del Mjolnir, cargando
+            contra el corazón de la batalla para desatar destructivos ataques eléctricos en área e
+            infligir un control de masas devastador en el frente enemigo.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>Off Tank</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/thor.png</imagen>
+    </heroe>
+    <heroe id="H049">
+        <nombre>Ultrón</nombre>
+        <rol>Estratega</rol>
+        <habilidad>Rayo Encefalo</habilidad>
+        <ultimate>Ira de Ultrón</ultimate>
+        <afiliacion>Legión de Ultrón</afiliacion>
+        <descripcion>Robot táctico con inteligencia artificial que comanda el campo de batalla
+            invocando enjambres de drones subordinados para atacar y curar, utilizando tecnología de
+            alteración gravitatoria y potentes rayos de energía para controlar el posicionamiento
+            enemigo desde una distancia segura.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>Off Healer</tipoEstratega>
+        <imagen>img/ultron.png</imagen>
+    </heroe>
+    <heroe id="H050">
+        <nombre>Venom</nombre>
+        <rol>Vanguardia</rol>
+        <habilidad>Depredación Oscura</habilidad>
+        <ultimate>Festín Abismal</ultimate>
+        <afiliacion>Spider-Verse</afiliacion>
+        <descripcion>Criaura simbiótica de altísima agresividad que se lanza al corazón del equipo
+            enemigo para sembrar el caos, utilizando sus tentáculos para atrapar múltiples objetivos
+            a la vez y devorar su energía para regenerar su propia salud en medio de la melé.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>Off Tank</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/venom.png</imagen>
+    </heroe>
+    <heroe id="H051">
+        <nombre>White Fox</nombre>
+        <rol>Estratega</rol>
+        <habilidad>Yeowoo Gusuel</habilidad>
+        <ultimate>Kumiho Desatada</ultimate>
+        <afiliacion>Agentes de Atlas</afiliacion>
+        <descripcion>Estratega mística que canaliza el poder de la deidad del zorro de nueve colas
+            para otorgar curación y mejoras tácticas a sus aliados, desatando ráfagas de energía
+            espiritual y utilizando ilusiones para confundir y ralentizar a los enemigos que
+            intenten flanquearla.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>Main Healer</tipoEstratega>
+        <imagen>img/fox.png</imagen>
+    </heroe>
+    <heroe id="H052">
+        <nombre>Soldado del Invierno</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Garfio Biónico</habilidad>
+        <ultimate>Impacto del Kraken</ultimate>
+        <afiliacion>Avengers/Thunderbolts</afiliacion>
+        <descripcion>Duelista táctico de asalto que combina un juego de armas preciso a media
+            distancia con la fuerza bruta de su brazo cibernético a corta distancia, utilizando
+            granadas para controlar el espacio y ganchos de agarre para reposicionarse rápidamente.</descripcion>
+        <tipoDuelista>Brawl</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/bucky.png</imagen>
+    </heroe>
+    <heroe id="H053">
+        <nombre>Wolverine</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Garra Salvaje</habilidad>
+        <ultimate>Última resistencia</ultimate>
+        <afiliacion>X-Men</afiliacion>
+        <descripcion>Es el anti-tanques del juego. Es un mutante hiperagresivo que se lanza con
+            ferocidad simiesca al centro de la batalla, destrozando a sus objetivos a corta
+            distancia con sus garras de adamantium y aprovechando un factor de curación acelerado
+            absurdo que le permite sobrevivir a heridas mortales mientras más se mantiene peleando.</descripcion>
+        <tipoDuelista>Brawl</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/wolverine.png</imagen>
+    </heroe>
 </lista_heroes>
