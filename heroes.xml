@@ -375,4 +375,103 @@
         <tipoEstratega>N/A</tipoEstratega>
         <imagen>img/ironman.png</imagen>
     </heroe>
+    <heroe id="H028">
+        <nombre>Jeff The Landshak</nombre>
+        <rol>Estratega</rol>
+        <habilidad>Splash</habilidad>
+        <ultimate>¡Es Jeff!</ultimate>
+        <afiliacion>Marvel Creatures</afiliacion>
+        <descripcion>Estratega adorable de alta movilidad que apoya a su equipo desde la retaguardia
+            escupiendo ráfagas de agua sanadora, sumergiéndose en el mapa para reposicionarse y
+            tragándose a aliados o enemigos para salvarlos o reubicarlos.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>Main Healer</tipoEstratega>
+        <imagen>img/jeff.png</imagen>
+    </heroe>
+    <heroe id="H029">
+        <nombre>Loki</nombre>
+        <rol>Estratega</rol>
+        <habilidad>Misil Místico</habilidad>
+        <ultimate>Dios de la Travesura</ultimate>
+        <afiliacion>Asgard</afiliacion>
+        <descripcion>Travieso, engañoso y escurridizo que domina el campo de batalla creando clones
+            ilusorios para confundir al enemigo, curando a sus aliados desde posiciones seguras y
+            transformándose en otros héroes para robar sus habilidades.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>Off Healer</tipoEstratega>
+        <imagen>img/loki.png</imagen>
+    </heroe>
+    <heroe id="H030">
+        <nombre>Luna Snow</nombre>
+        <rol>Estratega</rol>
+        <habilidad>Luz y Hielo Oscuro</habilidad>
+        <ultimate>Destino de los dos mundos</ultimate>
+        <afiliacion>Agentes de Atlas</afiliacion>
+        <descripcion>Estratega del pop que combina el hielo oscuro para congelar y dañar a sus
+            enemigos con el hielo luminoso para curar a sus aliados, utilizando sus ritmos e ídolos
+            de luz para mantener el control del escenario. </descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>Main Healer</tipoEstratega>
+        <imagen>img/luna.jpg</imagen>
+    </heroe>
+    <heroe id="H031">
+        <nombre>Magik</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Espadas del alma</habilidad>
+        <ultimate>Darkchild</ultimate>
+        <afiliacion>X-Men/Nuevos Mutantes</afiliacion>
+        <descripcion>Guerrera de cuerpo a cuerpo que utiliza su Espada del Alma para infligir gran
+            daño, abriendo portales interdimensionales a través del Limbo para emboscar enemigos y
+            transformándose en su forma de Darkchylde para ganar poder destructivo</descripcion>
+        <tipoDuelista>Dive</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/magik.png</imagen>
+    </heroe>
+    <heroe id="H032">
+        <nombre>Magneto</nombre>
+        <rol>Vanguardia</rol>
+        <habilidad>Descarga de Hierro</habilidad>
+        <ultimate>Meteoro M</ultimate>
+        <afiliacion>X-Men</afiliacion>
+        <descripcion>Vanguardia táctico que domina el magnetismo para manipular campos de fuerza
+            metálicos, proyectar escudos electromagnéticos que protegen a su equipo y acumular
+            energía cinética para devolver los ataques enemigos en forma de metralla devastadora.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>Main Tank</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/magneto.png</imagen>
+    </heroe>
+    <heroe id="H033">
+        <nombre>Mr. Fantástico</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Puño estirado</habilidad>
+        <ultimate>Rebote cerebral</ultimate>
+        <afiliacion>4 fantásticos</afiliacion>
+        <descripcion>Pseudo tanque elástico de gran control que aprovecha su cuerpo maleable para
+            engancharse y balancearse por el mapa, golpear a múltiples enemigos desde distancias
+            sorprendentes y envolver o rebotar proyectiles para proteger a sus aliados.</descripcion>
+        <tipoDuelista>Brawl</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/mrf.png</imagen>
+    </heroe>
+    <heroe id="H034">
+        <nombre>Moon Knigth</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Dardo del Crescendo</habilidad>
+        <ultimate>Mano de Khonshu</ultimate>
+        <afiliacion>Hijos de la Medianoche</afiliacion>
+        <descripcion>Duelista de precisión a distancia que canaliza el poder de Khonshu para lanzar
+            dardos crecientes de alta velocidad, teletransportarse a través de portales lunares y
+            abrumar a sus objetivos con un asalto místico continuo.</descripcion>
+        <tipoDuelista>Poke</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/mk.png</imagen>
+    </heroe>
+
 </lista_heroes>
