@@ -49,25 +49,7 @@
     color: #d1d1d6;
     font-size: 14px;
     line-height: 1.5;
-    margin-bottom: 25px;
-    min-height: 63px; /* Mantiene los botones alineados horizontalmente */
-}
-
-/* Botones de Acción Estilizados */
-.btn-enlace {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 1px;
-    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
-}
-
-.btn-enlace:hover {
-    transform: translateY(-2px);
+    margin-bottom: 25px;    
 }
 
 /* Vanguardias (Azul) */
@@ -76,8 +58,6 @@
     box-shadow: 0 0 15px rgba(38, 126, 222, 0.2);
 }
 .tarjeta-rol.vanguardia-card h3 { color: #267ede; }
-.tarjeta-rol.vanguardia-card .btn-enlace { background-color: #267ede; color: black; }
-.tarjeta-rol.vanguardia-card .btn-enlace:hover { box-shadow: 0 0 12px rgba(38, 126, 222, 0.5); }
 
 /* Duelistas (Amarillo) */
 .tarjeta-rol.duelista-card:hover {
@@ -85,8 +65,6 @@
     box-shadow: 0 0 15px rgba(255, 242, 0, 0.2);
 }
 .tarjeta-rol.duelista-card h3 { color: #fff200; }
-.tarjeta-rol.duelista-card .btn-enlace { background-color: #fff200; color: black; }
-.tarjeta-rol.duelista-card .btn-enlace:hover { box-shadow: 0 0 12px rgba(255, 242, 0, 0.5); }
 
 /* Estrategas (Verde) */
 .tarjeta-rol.estratega-card:hover {
@@ -94,9 +72,6 @@
     box-shadow: 0 0 15px rgba(38, 222, 129, 0.2);
 }
 .tarjeta-rol.estratega-card h3 { color: #26de81; }
-.tarjeta-rol.estratega-card .btn-enlace { background-color: #26de81; color: black; }
-.tarjeta-rol.estratega-card .btn-enlace:hover { box-shadow: 0 0 12px rgba(38, 222, 129, 0.5); }
-
 /*Diseño para los íconos de las tarjetas*/
 
 .tarjeta-rol.duelista-card:hover .icono-tarjeta {    
