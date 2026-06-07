@@ -158,14 +158,10 @@
         function enviarFormulario() {
             var nombre = document.getElementById("nombre-contacto").value.trim();
             var email = document.getElementById("email-contacto").value.trim();
-            var pass = document.getElementById("pass-contacto").value.trim();
+            var razon = document.getElementById("razon-contacto").value.trim();
 
-            if (!nombre || !email || !pass) {
+            if (!nombre || !email || !razon) {
                 alert("Por favor completa los campos obligatorios: nombre, correo y contraseña.");
-                return;
-            }
-            if (pass.length < 6) {
-                alert("La contraseña debe tener al menos 6 caracteres.");
                 return;
             }
 
