@@ -106,7 +106,7 @@
             por el aire.</descripcion>
         <tipoDuelista>N/A</tipoDuelista>
         <tipoVanguardia>Off Tank</tipoVanguardia>
-        <tipoEstratega>N/A</tipoEstratega>        
+        <tipoEstratega>N/A</tipoEstratega>
         <imagen>img/angela.png</imagen>
     </heroe>
     <heroe id="H009">
@@ -120,7 +120,7 @@
             ataques.</descripcion>
         <tipoDuelista>Dive</tipoDuelista>
         <tipoVanguardia>N/A</tipoVanguardia>
-        <tipoEstratega>N/A</tipoEstratega>        
+        <tipoEstratega>N/A</tipoEstratega>
         <imagen>img/blackcat.png</imagen>
     </heroe>
     <heroe id="H010">
@@ -134,7 +134,7 @@
             asaltar las líneas enemigas.</descripcion>
         <tipoDuelista>Dive</tipoDuelista>
         <tipoVanguardia>N/A</tipoVanguardia>
-        <tipoEstratega>N/A</tipoEstratega>        
+        <tipoEstratega>N/A</tipoEstratega>
         <imagen>img/panter.png</imagen>
     </heroe>
     <heroe id="H011">
@@ -148,7 +148,231 @@
             objetivos clave con gran agilidad.</descripcion>
         <tipoDuelista>Poke</tipoDuelista>
         <tipoVanguardia>N/A</tipoVanguardia>
-        <tipoEstratega>N/A</tipoEstratega>        
+        <tipoEstratega>N/A</tipoEstratega>
         <imagen>img/widow.png</imagen>
+    </heroe>
+    <heroe id="H012">
+        <nombre>Blade</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Espada ancestral</habilidad>
+        <ultimate>Mil Cortes</ultimate>
+        <afiliacion>Hijos de la Medianoche</afiliacion>
+        <descripcion>Cazador de vampirtos sumamente letal que combina el uso de espadas y armas de
+            fuego con mecánicas de robo de vida, acumulando sed de sangre para desatar ataques
+            cuerpo a cuerpo devastadores.</descripcion>
+        <tipoDuelista>Brawl</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/blade.png</imagen>
+    </heroe>
+    <heroe id="H013">
+        <nombre>Hulk/Bruce Banner</nombre>
+        <rol>Vanguardia</rol>
+        <habilidad>Pistola de rayos gama/Golpe pesado</habilidad>
+        <ultimate>Hulk Smash</ultimate>
+        <afiliacion>Avengers</afiliacion>
+        <descripcion>: Vanguardia masivo que inicia combates saltando directamente al peligro como
+            Hulk para absorber daño, controlar multitudes y aplastar enemigos, regresando a su forma
+            humana de Bruce Banner al ser derrotado para defenderse con armas de energía.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>Off Tank</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/hulk.png</imagen>
+    </heroe>
+    <heroe id="H014">
+        <nombre>Capitán América</nombre>
+        <rol>Vanguardia</rol>
+        <habilidad>Golpe centinela</habilidad>
+        <ultimate>Carga de libertad</ultimate>
+        <afiliacion>Avengers</afiliacion>
+        <descripcion>El líder de los vengadores utiliza su icónico escudo para bloquear proyectiles
+            y proteger a sus aliados, combinando golpes cuerpo a cuerpo con embestidas tácticas y la
+            capacidad de lanzar su escudo para rebotar entre los enemigos.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>Off Tank</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/cap.png</imagen>
+    </heroe>
+    <heroe id="H015">
+        <nombre>Cloak and Dagger</nombre>
+        <rol>Estratega</rol>
+        <habilidad>Daga de luz/Manto oscuro</habilidad>
+        <ultimate>Vínculo eterno</ultimate>
+        <afiliacion>Vigilants</afiliacion>
+        <descripcion>Estratega dual donde Cloak manipula portales de la Dimensión Oscura para
+            reposicionar o volver intangibles a sus aliados, mientras Dagger canaliza dagas de luz
+            mística para sanar al equipo y atacar enemigos.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>Main Healer</tipoEstratega>
+        <imagen>img/cloak.png</imagen>
+    </heroe>
+    <heroe id="H016">
+        <nombre>Daredevil</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Jab de la Justicia</habilidad>
+        <ultimate>Let the Devil out</ultimate>
+        <afiliacion>Denfenders</afiliacion>
+        <descripcion>Personaje de combate cercano que utiliza sus sentidos aumentados y bastones de
+            combate para esquivar ataques, realizar combos fluidos y detectar enemigos a través de
+            las paredes.</descripcion>
+        <tipoDuelista>Dive</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/daredevil.png</imagen>
+    </heroe>
+    <heroe id="H017">
+        <nombre>Deadpool</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Águilas del desierto</habilidad>
+        <ultimate>Pop Quiz</ultimate>
+        <afiliacion>Arma X</afiliacion>
+        <descripcion>Caótico y sumamente impredecible que combina espadas y pistolas dobles con una
+            gran movilidad, capaz de regenerar su salud de forma pasiva y romper las reglas del
+            juego al revivir de maneras absurdas. Lo que haga en el juego, depende de lo que elijan.</descripcion>
+        <tipoDuelista>Dive</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/deadpool.png</imagen>
+    </heroe>
+    <heroe id="H018">
+        <nombre>Deadpool</nombre>
+        <rol>Vanguardia</rol>
+        <habilidad>Águilas del desierto</habilidad>
+        <ultimate>Martillo de Prohibición/La Gran Prueba</ultimate>
+        <afiliacion>Arma X</afiliacion>
+        <descripcion>Caótico y sumamente impredecible que combina espadas y pistolas dobles con una
+            gran movilidad, capaz de regenerar su salud de forma pasiva y romper las reglas del
+            juego al revivir de maneras absurdas. Lo que haga en el juego, depende de lo que elijan.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>Main Tank</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/deadpool.png</imagen>
+    </heroe>
+    <heroe id="H019">
+        <nombre>Deadpool</nombre>
+        <rol>Estratega</rol>
+        <habilidad>Águilas del desierto</habilidad>
+        <ultimate>Examen final</ultimate>
+        <afiliacion>Arma X</afiliacion>
+        <descripcion>Caótico y sumamente impredecible que combina espadas y pistolas dobles con una
+            gran movilidad, capaz de regenerar su salud de forma pasiva y romper las reglas del
+            juego al revivir de maneras absurdas. Lo que haga en el juego, depende de lo que elijan.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>Main Healer</tipoEstratega>
+        <imagen>img/deadpool.png</imagen>
+    </heroe>
+    <heroe id="H020">
+        <nombre>Elsa Bloodstone</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Bala viviente</habilidad>
+        <ultimate>Depredador Apex</ultimate>
+        <afiliacion>Hijos de la Medianoche</afiliacion>
+        <descripcion>Duelista de precisión a distancia que utiliza un arsenal de armas de fuego
+            cargadas de energía mística para infligir daño crítico continuo y cazar objetivos desde
+            posiciones seguras.</descripcion>
+        <tipoDuelista>Brawl</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/elsa.png</imagen>
+    </heroe>
+    <heroe id="H021">
+        <nombre>Emma Frost</nombre>
+        <rol>Vanguardia</rol>
+        <habilidad>Pulso Telepático</habilidad>
+        <ultimate>Seducción psiónica</ultimate>
+        <afiliacion>X-Men / Club Hell Fire</afiliacion>
+        <descripcion>Esta reina alterna entre su forma psíquica para lanzar ráfagas de energía
+            mental y controlar el campo de batalla desde lejos, y su forma de diamante para ganar
+            gran resistencia y destrozar enemigos en combate cercano.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>Main Tank</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/emma.png</imagen>
+    </heroe>
+    <heroe id="H022">
+        <nombre>Groot</nombre>
+        <rol>Vanguardia</rol>
+        <habilidad>Golpe de enredadera</habilidad>
+        <ultimate>Prisión estranguladora</ultimate>
+        <afiliacion>Guardianes de la Galaxia</afiliacion>
+        <descripcion>Capaz de controlar el campo de batalla plantando muros de madera estratégicos
+            para bloquear el avance enemigo y utilizando raíces para atrapar e inmovilizar a sus
+            rivales.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>Main Tank</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/groot.png</imagen>
+    </heroe>
+    <heroe id="H023">
+        <nombre>Hawkeye</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Flecha perforante</habilidad>
+        <ultimate>Vista de Cazador</ultimate>
+        <afiliacion>Avengers</afiliacion>
+        <descripcion>Experto en la precisión a distancia que utiliza su arco y una variedad de
+            flechas con efectos tácticos para infligir gran daño desde lejos, rastrear amenazas y
+            mantener a raya a los enemigos con puntería perfecta.</descripcion>
+        <tipoDuelista>Poke</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/hawkeye.png</imagen>
+    </heroe>
+    <heroe id="H024">
+        <nombre>Antorcha Humana</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Cúmulo de fuego</habilidad>
+        <ultimate>Supernova</ultimate>
+        <afiliacion>4 Fantásticos</afiliacion>
+        <descripcion>Duelista aéreo de alta movilidad que domina el cielo lanzando ráfagas de fuego
+            continuas, capaz de realizar pasadas rápidas para quemar a múltiples enemigos y desatar
+            supernovas devastadoras.</descripcion>
+        <tipoDuelista>Poke</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/jhonny.png</imagen>
+    </heroe>
+    <heroe id="H025">
+        <nombre>Mujer Invisible</nombre>
+        <rol>Estratega</rol>
+        <habilidad>Proyección de Orbe</habilidad>
+        <ultimate>Campo de invisibilidad</ultimate>
+        <afiliacion>4 Fantásticos</afiliacion>
+        <descripcion>Estratega táctica que manipula la luz mística para volverse invisible y pasar
+            desapercibida, utilizando campos de fuerza dinámicos para curar y proteger a sus aliados
+            de proyectiles pesados y atrapar a los enemigos.</descripcion>
+        <tipoDuelista>N/A</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>Main Healer</tipoEstratega>
+        <imagen>img/invis.png</imagen>
+    </heroe>
+    <heroe id="H026">
+        <nombre>Iron Fist</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Jeet Kune Do</habilidad>
+        <ultimate>Chi Vivo</ultimate>
+        <afiliacion>Defenders</afiliacion>
+        <descripcion>Experto en combate cercano que canaliza el poder del dragón Shou-Lao en sus
+            puños para ejecutar combos de artes marciales de alta velocidad, desatar ráfagas de
+            energía mística y romper las defensas enemigas.</descripcion>
+        <tipoDuelista>Brawl</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/fist.png</imagen>
+    </heroe>
+    <heroe id="H027">
+        <nombre>Iron Man</nombre>
+        <rol>Duelista</rol>
+        <habilidad>Explosión repulsora</habilidad>
+        <ultimate>Cañón de pulso invencible</ultimate>
+        <afiliacion>Avengers</afiliacion>
+        <descripcion>El millonario con equipo de alta tecnología que domina el espacio vertical,
+            utilizando sus repulsores y un cañón de unirrayo concentrado para desgastar a los
+            enemigos desde el cielo con bombardeos continuos. </descripcion>
+        <tipoDuelista>Poke</tipoDuelista>
+        <tipoVanguardia>N/A</tipoVanguardia>
+        <tipoEstratega>N/A</tipoEstratega>
+        <imagen>img/ironman.png</imagen>
     </heroe>
 </lista_heroes>
