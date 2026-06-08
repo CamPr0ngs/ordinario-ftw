@@ -1,4 +1,4 @@
-PROMPTS UTILIZADOS DURANTE EL DESARROLLO
+PROMPTS DE CLAUDE UTILIZADOS DURANTE EL DESARROLLO
 Proyecto: Plataforma Táctica de Consulta Dinámica - Marvel Rivals
 Materia: Fundamentos de Tecnologías Web 2026
 =========================================================
