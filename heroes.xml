@@ -12,7 +12,7 @@
         <tipoDuelista>N/A</tipoDuelista>
         <tipoVanguardia>Main Tank</tipoVanguardia>
         <tipoEstratega>Off Healer</tipoEstratega>
-        <imagen>img/strange.png</imagen>
+        <imagen>img/Strange.png</imagen>
     </heroe>
     <heroe id="H002">
         <nombre>Hela</nombre>
@@ -25,7 +25,7 @@
         <tipoDuelista>Poke</tipoDuelista>
         <tipoVanguardia>N/A</tipoVanguardia>
         <tipoEstratega>N/A</tipoEstratega>
-        <imagen>img/hela.png</imagen>
+        <imagen>img/Hela.png</imagen>
     </heroe>
     <heroe id="H003">
         <nombre>Peni Parker</nombre>
@@ -38,7 +38,7 @@
         <tipoDuelista>N/A</tipoDuelista>
         <tipoVanguardia>Off Tank</tipoVanguardia>
         <tipoEstratega>Off Healer</tipoEstratega>
-        <imagen>img/peni.png</imagen>
+        <imagen>img/Peni.png</imagen>
     </heroe>
     <heroe id="H004">
         <nombre>Gambito</nombre>
@@ -51,7 +51,7 @@
         <tipoDuelista>N/A</tipoDuelista>
         <tipoVanguardia>N/A</tipoVanguardia>
         <tipoEstratega>Main Healer</tipoEstratega>
-        <imagen>img/gambito.png</imagen>
+        <imagen>img/Gambito.png</imagen>
     </heroe>
     <heroe id="H005">
         <nombre>Mantis</nombre>
@@ -65,7 +65,7 @@
         <tipoDuelista>N/A</tipoDuelista>
         <tipoVanguardia>N/A</tipoVanguardia>
         <tipoEstratega>Off Healer</tipoEstratega>
-        <imagen>img/mantis.png</imagen>
+        <imagen>img/Mantis.png</imagen>
     </heroe>
     <heroe id="H006">
         <nombre>Devil Dinosaur</nombre>
