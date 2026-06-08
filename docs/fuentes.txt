@@ -1,0 +1,41 @@
+FUENTES DE REFERENCIA UTILIZADAS DURANTE EL DESARROLLO
+Proyecto: Plataforma Táctica de Consulta - Marvel Rivals
+Materia: Fundamentos de Tecnologías Web 2026
+
+
+
+HTML - SEMÁNTICO Y ESTRUCTURA
+https://www.w3schools.com/html/html5_semantic_elements.asp
+https://www.w3schools.com/html/html_tables.asp
+https://www.w3schools.com/html/html_forms.asp
+https://www.w3schools.com/html/html_form_elements.asp
+https://www.w3schools.com/html/html_form_input_types.asp
+
+CSS
+https://www.w3schools.com/css/css_grid.asp
+https://www.w3schools.com/css/css3_transitions.asp
+https://www.w3schools.com/css/css3_mediaqueries.asp
+https://www.w3schools.com/css/css_pseudo_classes.asp
+https://www.w3schools.com/css/css3_shadows_box.asp
+https://www.w3schools.com/css/css_border.asp
+https://www.w3schools.com/css/css_background.asp
+
+
+JAVASCRIPT
+https://www.w3schools.com/js/js_htmldom.asp
+https://www.w3schools.com/js/js_htmldom_elements.asp
+https://www.w3schools.com/xml/xml_http.asp
+https://www.w3schools.com/xml/ajax_xmlhttprequest_send.asp
+https://www.w3schools.com/xml/dom_nodelist.asp
+
+
+ACCESIBILIDAD
+https://www.w3schools.com/accessibility/index.php
+https://www.w3schools.com/accessibility/accessibility_labels.php
+https://www.w3schools.com/accessibility/accessibility_landmarks.php
+
+
+DTD Y XML
+https://www.w3schools.com/xml/xml_dtd_intro.asp
+https://www.w3schools.com/xml/xml_dtd_el.asp
+https://www.w3schools.com/xml/xml_dtd_attributes.asp

@@ -129,7 +129,7 @@ R: Puedes usar el escape con backslash \' dentro del string, o mejor aún, usar 
 
 
 P: ¿Cómo hago que un elemento resalte al pasar el mouse encima?
-R: Con la pseudo-clase :hover en CSS. Por ejemplo, .tarjeta:hover { background-color: #2a2a30; }
+R: Con la pseudo-clase :hover en CSS. Por ejemplo, .elemento:hover { background-color: #black; }
    cambia el fondo al pasar el mouse. Para que la transición se vea suave agrega
    transition: background-color 0.3s ease en el elemento base, no en el :hover.
 
@@ -151,13 +151,6 @@ R: En CSS puedes encadenar el selector: .padre:hover .hijo { color: #fff200; }. 
    el estilo al hijo solo cuando el mouse está sobre el padre, sin necesidad de JavaScript.
    Funciona con cualquier propiedad CSS, no solo color.
 
-
-P: ¿Cómo hago que el cursor cambie a una manita cuando paso el mouse sobre algo que no es un enlace?
-R: Con cursor: pointer en el elemento. Por ejemplo, una fila de tabla clickeable llevaría
-   style="cursor: pointer" o la clase CSS correspondiente con cursor: pointer. Así el
-   usuario entiende visualmente que el elemento es interactivo.
-
-
 P: ¿Cómo animo el color de un borde para que cambie suavemente al hacer hover?
 R: Agrega transition: border-color 0.3s ease en el elemento base y cambia el border-color
    en el :hover. Por ejemplo: .card { border-color: #232329; transition: border-color 0.3s ease; }
@@ -174,9 +167,3 @@ P: ¿Cómo hago que un div ocupe todo el ancho disponible pero tenga un máximo 
 R: Con max-width y margin: 0 auto. Por ejemplo: .contenedor { width: 100%; max-width: 900px;
    margin: 0 auto; }. El width: 100% lo hace flexible en pantallas chicas y el max-width
    lo limita en pantallas grandes. El margin auto lo centra horizontalmente.
-
-
-P: ¿Cómo hago que el nav se quede fijo arriba mientras hago scroll?
-R: Con position: sticky; top: 0 en el elemento nav o header. A diferencia de position: fixed,
-   sticky respeta el flujo del documento y no saca al elemento de su lugar, por lo que
-   el contenido de abajo no se esconde debajo de él.
